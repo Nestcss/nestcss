@@ -1,0 +1,429 @@
+/* =======================================================
+   NESTCSS DESIGN TOKENS - COMPLETE SYSTEM
+   ======================================================= */
+
+:root {
+  /* ========== COLOR PALETTE ========== */
+  /* Slate */
+  --nc-slate-50: #f9fafb;
+  --nc-slate-100: #f1f5f9;
+  --nc-slate-200: #e2e8f0;
+  --nc-slate-300: #cbd5e1;
+  --nc-slate-400: #94a3b8;
+  --nc-slate-500: #64748b;
+  --nc-slate-600: #475569;
+  --nc-slate-700: #334155;
+  --nc-slate-800: #1e293b;
+  --nc-slate-900: #0f172a;
+
+  /* Gray */
+  --nc-gray-50: #f9fafb;
+  --nc-gray-100: #f3f4f6;
+  --nc-gray-200: #e5e7eb;
+  --nc-gray-300: #d1d5db;
+  --nc-gray-400: #9ca3af;
+  --nc-gray-500: #6b7280;
+  --nc-gray-600: #4b5563;
+  --nc-gray-700: #374151;
+  --nc-gray-800: #1f2937;
+  --nc-gray-900: #111827;
+
+  /* Zinc */
+  --nc-zinc-50: #fafafa;
+  --nc-zinc-100: #f4f4f5;
+  --nc-zinc-200: #e4e4e7;
+  --nc-zinc-300: #d4d4d8;
+  --nc-zinc-400: #a1a1aa;
+  --nc-zinc-500: #71717a;
+  --nc-zinc-600: #52525b;
+  --nc-zinc-700: #3f3f46;
+  --nc-zinc-800: #27272a;
+  --nc-zinc-900: #18181b;
+
+  /* Neutral */
+  --nc-neutral-50: #fafafa;
+  --nc-neutral-100: #f5f5f5;
+  --nc-neutral-200: #e5e5e5;
+  --nc-neutral-300: #d4d4d4;
+  --nc-neutral-400: #a3a3a3;
+  --nc-neutral-500: #737373;
+  --nc-neutral-600: #525252;
+  --nc-neutral-700: #404040;
+  --nc-neutral-800: #262626;
+  --nc-neutral-900: #171717;
+
+  /* Stone */
+  --nc-stone-50: #fafaf9;
+  --nc-stone-100: #f5f5f4;
+  --nc-stone-200: #e7e5e4;
+  --nc-stone-300: #d6d3d1;
+  --nc-stone-400: #a8a29e;
+  --nc-stone-500: #78716c;
+  --nc-stone-600: #57534e;
+  --nc-stone-700: #44403c;
+  --nc-stone-800: #292524;
+  --nc-stone-900: #1c1917;
+
+  /* Red */
+  --nc-red-50: #fef2f2;
+  --nc-red-100: #fee2e2;
+  --nc-red-200: #fecaca;
+  --nc-red-300: #fca5a5;
+  --nc-red-400: #f87171;
+  --nc-red-500: #ef4444;
+  --nc-red-600: #dc2626;
+  --nc-red-700: #b91c1c;
+  --nc-red-800: #991b1b;
+  --nc-red-900: #7f1d1d;
+
+  /* Orange */
+  --nc-orange-50: #fff7ed;
+  --nc-orange-100: #ffedd5;
+  --nc-orange-200: #fed7aa;
+  --nc-orange-300: #fdba74;
+  --nc-orange-400: #fb923c;
+  --nc-orange-500: #f97316;
+  --nc-orange-600: #ea580c;
+  --nc-orange-700: #c2410c;
+  --nc-orange-800: #9a3412;
+  --nc-orange-900: #7c2d12;
+
+  /* Amber */
+  --nc-amber-50: #fffbeb;
+  --nc-amber-100: #fef3c7;
+  --nc-amber-200: #fde68a;
+  --nc-amber-300: #fcd34d;
+  --nc-amber-400: #fbbf24;
+  --nc-amber-500: #f59e0b;
+  --nc-amber-600: #d97706;
+  --nc-amber-700: #b45309;
+  --nc-amber-800: #92400e;
+  --nc-amber-900: #78350f;
+
+  /* Yellow */
+  --nc-yellow-50: #fefce8;
+  --nc-yellow-100: #fef9c3;
+  --nc-yellow-200: #fef08a;
+  --nc-yellow-300: #fde047;
+  --nc-yellow-400: #facc15;
+  --nc-yellow-500: #eab308;
+  --nc-yellow-600: #ca8a04;
+  --nc-yellow-700: #a16207;
+  --nc-yellow-800: #854d0e;
+  --nc-yellow-900: #713f12;
+
+  /* Lime */
+  --nc-lime-50: #f7fee7;
+  --nc-lime-100: #ecfccb;
+  --nc-lime-200: #d9f99d;
+  --nc-lime-300: #bef264;
+  --nc-lime-400: #a3e635;
+  --nc-lime-500: #84cc16;
+  --nc-lime-600: #65a30d;
+  --nc-lime-700: #4d7c0f;
+  --nc-lime-800: #3f6212;
+  --nc-lime-900: #365314;
+
+  /* Green */
+  --nc-green-50: #f0fdf4;
+  --nc-green-100: #dcfce7;
+  --nc-green-200: #bbf7d0;
+  --nc-green-300: #86efac;
+  --nc-green-400: #4ade80;
+  --nc-green-500: #22c55e;
+  --nc-green-600: #16a34a;
+  --nc-green-700: #15803d;
+  --nc-green-800: #166534;
+  --nc-green-900: #14532d;
+
+  /* Emerald */
+  --nc-emerald-50: #ecfdf5;
+  --nc-emerald-100: #d1fae5;
+  --nc-emerald-200: #a7f3d0;
+  --nc-emerald-300: #6ee7b7;
+  --nc-emerald-400: #34d399;
+  --nc-emerald-500: #10b981;
+  --nc-emerald-600: #059669;
+  --nc-emerald-700: #047857;
+  --nc-emerald-800: #065f46;
+  --nc-emerald-900: #064e3b;
+
+  /* Teal */
+  --nc-teal-50: #f0fdfa;
+  --nc-teal-100: #ccfbf1;
+  --nc-teal-200: #99f6e4;
+  --nc-teal-300: #5eead4;
+  --nc-teal-400: #2dd4bf;
+  --nc-teal-500: #14b8a6;
+  --nc-teal-600: #0d9488;
+  --nc-teal-700: #0f766e;
+  --nc-teal-800: #115e59;
+  --nc-teal-900: #134e4a;
+
+  /* Cyan */
+  --nc-cyan-50: #ecfeff;
+  --nc-cyan-100: #cffafe;
+  --nc-cyan-200: #a5f3fc;
+  --nc-cyan-300: #67e8f9;
+  --nc-cyan-400: #22d3ee;
+  --nc-cyan-500: #06b6d4;
+  --nc-cyan-600: #0891b2;
+  --nc-cyan-700: #0e7490;
+  --nc-cyan-800: #155e75;
+  --nc-cyan-900: #164e63;
+
+  /* Sky */
+  --nc-sky-50: #f0f9ff;
+  --nc-sky-100: #e0f2fe;
+  --nc-sky-200: #bae6fd;
+  --nc-sky-300: #7dd3fc;
+  --nc-sky-400: #38bdf8;
+  --nc-sky-500: #0ea5e9;
+  --nc-sky-600: #0284c7;
+  --nc-sky-700: #0369a1;
+  --nc-sky-800: #075985;
+  --nc-sky-900: #0c4a6e;
+
+  /* Blue */
+  --nc-blue-50: #eff6ff;
+  --nc-blue-100: #dbeafe;
+  --nc-blue-200: #bfdbfe;
+  --nc-blue-300: #93c5fd;
+  --nc-blue-400: #60a5fa;
+  --nc-blue-500: #3b82f6;
+  --nc-blue-600: #2563eb;
+  --nc-blue-700: #1d4ed8;
+  --nc-blue-800: #1e40af;
+  --nc-blue-900: #1e3a8a;
+
+  /* Indigo */
+  --nc-indigo-50: #eef2ff;
+  --nc-indigo-100: #e0e7ff;
+  --nc-indigo-200: #c7d2fe;
+  --nc-indigo-300: #a5b4fc;
+  --nc-indigo-400: #818cf8;
+  --nc-indigo-500: #6366f1;
+  --nc-indigo-600: #4f46e5;
+  --nc-indigo-700: #4338ca;
+  --nc-indigo-800: #3730a3;
+  --nc-indigo-900: #312e81;
+
+  /* Violet */
+  --nc-violet-50: #f5f3ff;
+  --nc-violet-100: #ede9fe;
+  --nc-violet-200: #ddd6fe;
+  --nc-violet-300: #c4b5fd;
+  --nc-violet-400: #a78bfa;
+  --nc-violet-500: #8b5cf6;
+  --nc-violet-600: #7c3aed;
+  --nc-violet-700: #6d28d9;
+  --nc-violet-800: #5b21b6;
+  --nc-violet-900: #4c1d95;
+
+  /* Purple */
+  --nc-purple-50: #faf5ff;
+  --nc-purple-100: #f3e8ff;
+  --nc-purple-200: #e9d5ff;
+  --nc-purple-300: #d8b4fe;
+  --nc-purple-400: #c084fc;
+  --nc-purple-500: #a855f7;
+  --nc-purple-600: #9333ea;
+  --nc-purple-700: #7e22ce;
+  --nc-purple-800: #6b21a8;
+  --nc-purple-900: #581c87;
+
+  /* Fuchsia */
+  --nc-fuchsia-50: #fdf4ff;
+  --nc-fuchsia-100: #fae8ff;
+  --nc-fuchsia-200: #f5d0fe;
+  --nc-fuchsia-300: #f0abfc;
+  --nc-fuchsia-400: #e879f9;
+  --nc-fuchsia-500: #d946ef;
+  --nc-fuchsia-600: #c026d3;
+  --nc-fuchsia-700: #a21caf;
+  --nc-fuchsia-800: #86198f;
+  --nc-fuchsia-900: #701a75;
+
+  /* Pink */
+  --nc-pink-50: #fdf2f8;
+  --nc-pink-100: #fce7f3;
+  --nc-pink-200: #fbcfe8;
+  --nc-pink-300: #f9a8d4;
+  --nc-pink-400: #f472b6;
+  --nc-pink-500: #ec4899;
+  --nc-pink-600: #db2777;
+  --nc-pink-700: #be185d;
+  --nc-pink-800: #9d174d;
+  --nc-pink-900: #831843;
+
+  /* Rose */
+  --nc-rose-50: #fff1f2;
+  --nc-rose-100: #ffe4e6;
+  --nc-rose-200: #fecdd3;
+  --nc-rose-300: #fda4af;
+  --nc-rose-400: #fb7185;
+  --nc-rose-500: #f43f5e;
+  --nc-rose-600: #e11d48;
+  --nc-rose-700: #be123c;
+  --nc-rose-800: #9f1239;
+  --nc-rose-900: #881337;
+
+  /* ========== SEMANTIC COLORS ========== */
+  --nc-primary-50: var(--nc-blue-50);
+  --nc-primary-100: var(--nc-blue-100);
+  --nc-primary-500: var(--nc-blue-500);
+  --nc-primary-600: var(--nc-blue-600);
+  --nc-primary-700: var(--nc-blue-700);
+  
+  --nc-secondary-50: var(--nc-gray-50);
+  --nc-secondary-100: var(--nc-gray-100);
+  --nc-secondary-500: var(--nc-gray-500);
+  --nc-secondary-600: var(--nc-gray-600);
+  --nc-secondary-700: var(--nc-gray-700);
+  
+  --nc-success-50: var(--nc-green-50);
+  --nc-success-100: var(--nc-green-100);
+  --nc-success-500: var(--nc-green-500);
+  --nc-success-600: var(--nc-green-600);
+  --nc-success-700: var(--nc-green-700);
+  
+  --nc-warning-50: var(--nc-yellow-50);
+  --nc-warning-100: var(--nc-yellow-100);
+  --nc-warning-500: var(--nc-yellow-500);
+  --nc-warning-600: var(--nc-yellow-600);
+  --nc-warning-700: var(--nc-yellow-700);
+  
+  --nc-error-50: var(--nc-red-50);
+  --nc-error-100: var(--nc-red-100);
+  --nc-error-500: var(--nc-red-500);
+  --nc-error-600: var(--nc-red-600);
+  --nc-error-700: var(--nc-red-700);
+
+  /* ========== BASE COLORS ========== */
+  --nc-black: #000000;
+  --nc-white: #ffffff;
+  --nc-transparent: transparent;
+  --nc-current: currentColor;
+  --nc-inherit: inherit;
+
+  /* ========== TYPOGRAPHY SYSTEM ========== */
+  /* Font Families */
+  --nc-font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --nc-font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --nc-font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  
+  /* Font Sizes */
+  --nc-text-xs: 0.75rem;      /* 12px */
+  --nc-text-sm: 0.875rem;     /* 14px */
+  --nc-text-base: 1rem;       /* 16px */
+  --nc-text-lg: 1.125rem;     /* 18px */
+  --nc-text-xl: 1.25rem;      /* 20px */
+  --nc-text-2xl: 1.5rem;      /* 24px */
+  --nc-text-3xl: 1.875rem;    /* 30px */
+  --nc-text-4xl: 2.25rem;     /* 36px */
+  --nc-text-5xl: 3rem;        /* 48px */
+  --nc-text-6xl: 3.75rem;     /* 60px */
+  --nc-text-7xl: 4.5rem;      /* 72px */
+  --nc-text-8xl: 6rem;        /* 96px */
+  --nc-text-9xl: 8rem;        /* 128px */
+  
+  /* Font Weights */
+  --nc-font-thin: 100;
+  --nc-font-extralight: 200;
+  --nc-font-light: 300;
+  --nc-font-normal: 400;
+  --nc-font-medium: 500;
+  --nc-font-semibold: 600;
+  --nc-font-bold: 700;
+  --nc-font-extrabold: 800;
+  --nc-font-black: 900;
+  
+  /* Line Heights */
+  --nc-leading-3: .75rem;     /* 12px */
+  --nc-leading-4: 1rem;       /* 16px */
+  --nc-leading-5: 1.25rem;    /* 20px */
+  --nc-leading-6: 1.5rem;     /* 24px */
+  --nc-leading-7: 1.75rem;    /* 28px */
+  --nc-leading-8: 2rem;       /* 32px */
+  --nc-leading-9: 2.25rem;    /* 36px */
+  --nc-leading-10: 2.5rem;    /* 40px */
+  --nc-leading-none: 1;
+  --nc-leading-tight: 1.25;
+  --nc-leading-snug: 1.375;
+  --nc-leading-normal: 1.5;
+  --nc-leading-relaxed: 1.625;
+  --nc-leading-loose: 2;
+
+  /* Letter Spacing */
+  --nc-tracking-tighter: -0.05em;
+  --nc-tracking-tight: -0.025em;
+  --nc-tracking-normal: 0em;
+  --nc-tracking-wide: 0.025em;
+  --nc-tracking-wider: 0.05em;
+  --nc-tracking-widest: 0.1em;
+
+  /* ========== SPACING SCALE ========== */
+  --nc-space-0: 0rem;
+  --nc-space-1: 0.25rem;
+  --nc-space-2: 0.5rem;
+  --nc-space-3: 0.75rem;
+  --nc-space-4: 1rem;
+  --nc-space-5: 1.25rem;
+  --nc-space-6: 1.5rem;
+  --nc-space-8: 2rem;
+  --nc-space-10: 2.5rem;
+  --nc-space-12: 3rem;
+  --nc-space-16: 4rem;
+  --nc-space-20: 5rem;
+  --nc-space-24: 6rem;
+  --nc-space-32: 8rem;
+  --nc-space-40: 10rem;
+  --nc-space-48: 12rem;
+  --nc-space-56: 14rem;
+  --nc-space-64: 16rem;
+  --nc-space-80: 20rem;
+  --nc-space-96: 24rem;
+
+  /* ========== BORDER RADIUS ========== */
+  --nc-radius-none: 0;
+  --nc-radius-sm: 0.125rem;
+  --nc-radius: 0.25rem;
+  --nc-radius-md: 0.375rem;
+  --nc-radius-lg: 0.5rem;
+  --nc-radius-xl: 0.75rem;
+  --nc-radius-2xl: 1rem;
+  --nc-radius-3xl: 1.5rem;
+  --nc-radius-full: 9999px;
+
+  /* ========== SHADOWS ========== */
+  --nc-shadow-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --nc-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --nc-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --nc-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --nc-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --nc-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --nc-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* ========== SPECIAL EFFECTS ========== */
+  --nc-shadow-clay-inset-1: inset 6px 6px 12px rgba(0, 0, 0, 0.08);
+  --nc-shadow-clay-inset-2: inset -6px -6px 12px rgba(255, 255, 255, 0.6);
+  --nc-glass-bg: rgba(255, 255, 255, 0.06);
+  --nc-glass-border: rgba(255, 255, 255, 0.12);
+  --nc-glass-blur: 12px;
+
+  /* ========== BREAKPOINTS ========== */
+  --nc-bp-sm: 640px;
+  --nc-bp-md: 768px;
+  --nc-bp-lg: 1024px;
+  --nc-bp-xl: 1280px;
+  --nc-bp-2xl: 1536px;
+
+  /* ========== Z-INDEX ========== */
+  --nc-z-0: 0;
+  --nc-z-10: 10;
+  --nc-z-20: 20;
+  --nc-z-30: 30;
+  --nc-z-40: 40;
+  --nc-z-50: 50;
+  --nc-z-auto: auto;
+}

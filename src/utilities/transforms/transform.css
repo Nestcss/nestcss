@@ -1,0 +1,96 @@
+/* =======================================================
+   NESTCSS - TRANSFORM UTILITIES
+   ======================================================= */
+
+/* Transform */
+.nc-transform { transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important; }
+.nc-transform-none { transform: none !important; }
+
+/* Translate */
+.nc-translate-x-0 { transform: translateX(0) !important; }
+.nc-translate-x-1 { transform: translateX(var(--nc-space-1)) !important; }
+.nc-translate-x-2 { transform: translateX(var(--nc-space-2)) !important; }
+.nc-translate-x-4 { transform: translateX(var(--nc-space-4)) !important; }
+.nc-translate-x-8 { transform: translateX(var(--nc-space-8)) !important; }
+.nc-translate-x-12 { transform: translateX(var(--nc-space-12)) !important; }
+.nc-translate-x-16 { transform: translateX(var(--nc-space-16)) !important; }
+.nc-translate-x-full { transform: translateX(100%) !important; }
+.nc-translate-x-1-2 { transform: translateX(50%) !important; }
+
+.nc-translate-y-0 { transform: translateY(0) !important; }
+.nc-translate-y-1 { transform: translateY(var(--nc-space-1)) !important; }
+.nc-translate-y-2 { transform: translateY(var(--nc-space-2)) !important; }
+.nc-translate-y-4 { transform: translateY(var(--nc-space-4)) !important; }
+.nc-translate-y-8 { transform: translateY(var(--nc-space-8)) !important; }
+.nc-translate-y-12 { transform: translateY(var(--nc-space-12)) !important; }
+.nc-translate-y-16 { transform: translateY(var(--nc-space-16)) !important; }
+.nc-translate-y-full { transform: translateY(100%) !important; }
+.nc-translate-y-1-2 { transform: translateY(50%) !important; }
+
+/* Scale */
+.nc-scale-0 { transform: scale(0) !important; }
+.nc-scale-50 { transform: scale(0.5) !important; }
+.nc-scale-75 { transform: scale(0.75) !important; }
+.nc-scale-90 { transform: scale(0.9) !important; }
+.nc-scale-95 { transform: scale(0.95) !important; }
+.nc-scale-100 { transform: scale(1) !important; }
+.nc-scale-105 { transform: scale(1.05) !important; }
+.nc-scale-110 { transform: scale(1.1) !important; }
+.nc-scale-125 { transform: scale(1.25) !important; }
+
+.nc-scale-x-0 { transform: scaleX(0) !important; }
+.nc-scale-x-50 { transform: scaleX(0.5) !important; }
+.nc-scale-x-75 { transform: scaleX(0.75) !important; }
+.nc-scale-x-90 { transform: scaleX(0.9) !important; }
+.nc-scale-x-95 { transform: scaleX(0.95) !important; }
+.nc-scale-x-100 { transform: scaleX(1) !important; }
+.nc-scale-x-105 { transform: scaleX(1.05) !important; }
+.nc-scale-x-110 { transform: scaleX(1.1) !important; }
+.nc-scale-x-125 { transform: scaleX(1.25) !important; }
+
+.nc-scale-y-0 { transform: scaleY(0) !important; }
+.nc-scale-y-50 { transform: scaleY(0.5) !important; }
+.nc-scale-y-75 { transform: scaleY(0.75) !important; }
+.nc-scale-y-90 { transform: scaleY(0.9) !important; }
+.nc-scale-y-95 { transform: scaleY(0.95) !important; }
+.nc-scale-y-100 { transform: scaleY(1) !important; }
+.nc-scale-y-105 { transform: scaleY(1.05) !important; }
+.nc-scale-y-110 { transform: scaleY(1.1) !important; }
+.nc-scale-y-125 { transform: scaleY(1.25) !important; }
+
+/* Rotate */
+.nc-rotate-0 { transform: rotate(0deg) !important; }
+.nc-rotate-1 { transform: rotate(1deg) !important; }
+.nc-rotate-2 { transform: rotate(2deg) !important; }
+.nc-rotate-3 { transform: rotate(3deg) !important; }
+.nc-rotate-6 { transform: rotate(6deg) !important; }
+.nc-rotate-12 { transform: rotate(12deg) !important; }
+.nc-rotate-45 { transform: rotate(45deg) !important; }
+.nc-rotate-90 { transform: rotate(90deg) !important; }
+.nc-rotate-180 { transform: rotate(180deg) !important; }
+
+/* Skew */
+.nc-skew-x-0 { transform: skewX(0deg) !important; }
+.nc-skew-x-1 { transform: skewX(1deg) !important; }
+.nc-skew-x-2 { transform: skewX(2deg) !important; }
+.nc-skew-x-3 { transform: skewX(3deg) !important; }
+.nc-skew-x-6 { transform: skewX(6deg) !important; }
+.nc-skew-x-12 { transform: skewX(12deg) !important; }
+
+.nc-skew-y-0 { transform: skewY(0deg) !important; }
+.nc-skew-y-1 { transform: skewY(1deg) !important; }
+.nc-skew-y-2 { transform: skewY(2deg) !important; }
+.nc-skew-y-3 { transform: skewY(3deg) !important; }
+.nc-skew-y-6 { transform: skewY(6deg) !important; }
+.nc-skew-y-12 { transform: skewY(12deg) !important; }
+
+/* Transform Origin */
+.nc-origin-center { transform-origin: center !important; }
+.nc-origin-top { transform-origin: top !important; }
+.nc-origin-top-right { transform-origin: top right !important; }
+.nc-origin-right { transform-origin: right !important; }
+.nc-origin-bottom-right { transform-origin: bottom right !important; }
+.nc-origin-bottom { transform-origin: bottom !important; }
+.nc-origin-bottom-left { transform-origin: bottom left !important; }
+.nc-origin-left { transform-origin: left !important; }
+.nc-origin-top-left { transform-origin: top left !important; }

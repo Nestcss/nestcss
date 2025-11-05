@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestCSS - Framework Test</title>
+    <link rel="stylesheet" href="../dist/nestcss.css">
+    <style>
+        /* Test page styles */
+        body {
+            font-family: var(--nc-font-sans);
+            background: var(--nc-slate-50);
+            color: var(--nc-slate-900);
+            line-height: var(--nc-leading-relaxed);
+        }
+        
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--nc-space-8);
+        }
+        
+        .test-section {
+            background: var(--nc-white);
+            border-radius: var(--nc-radius-xl);
+            padding: var(--nc-space-8);
+            margin-bottom: var(--nc-space-8);
+            box-shadow: var(--nc-shadow-sm);
+            border: 1px solid var(--nc-slate-200);
+        }
+        
+        .section-title {
+            font-size: var(--nc-text-3xl);
+            font-weight: var(--nc-font-bold);
+            color: var(--nc-slate-900);
+            margin-bottom: var(--nc-space-6);
+            padding-bottom: var(--nc-space-4);
+            border-bottom: 2px solid var(--nc-slate-200);
+        }
+        
+        .subsection-title {
+            font-size: var(--nc-text-xl);
+            font-weight: var(--nc-font-semibold);
+            color: var(--nc-slate-800);
+            margin: var(--nc-space-6) 0 var(--nc-space-4) 0;
+        }
+        
+        .component-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--nc-space-6);
+            margin-bottom: var(--nc-space-6);
+        }
+        
+        .component-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--nc-space-4);
+            align-items: center;
+            margin-bottom: var(--nc-space-4);
+        }
+        
+        .code-block {
+            background: var(--nc-slate-100);
+            padding: var(--nc-space-4);
+            border-radius: var(--nc-radius-lg);
+            font-family: var(--nc-font-mono);
+            font-size: var(--nc-text-sm);
+            margin: var(--nc-space-4) 0;
+            border: 1px solid var(--nc-slate-200);
+            overflow-x: auto;
+        }
+        
+        .color-test {
+            padding: var(--nc-space-4);
+            border-radius: var(--nc-radius);
+            margin: var(--nc-space-2);
+            color: white;
+            text-align: center;
+            font-weight: var(--nc-font-medium);
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1 class="section-title">NestCSS Framework Test</h1>
+        
+        <!-- CSS Variables Test -->
+        <section class="test-section">
+            <h2 class="subsection-title">CSS Variables Test</h2>
+            <div class="component-grid">
+                <div class="color-test" style="background-color: var(--nc-primary-500);">Primary</div>
+                <div class="color-test" style="background-color: var(--nc-success-500);">Success</div>
+                <div class="color-test" style="background-color: var(--nc-warning-500);">Warning</div>
+                <div class="color-test" style="background-color: var(--nc-error-500);">Error</div>
+                <div class="color-test" style="background-color: var(--nc-slate-500); color: white;">Slate</div>
+                <div class="color-test" style="background-color: var(--nc-slate-900); color: white;">Slate Dark</div>
+            </div>
+            
+            <div class="code-block">
+&lt;div style="background-color: var(--nc-primary-500);"&gt;Primary&lt;/div&gt;
+&lt;div style="background-color: var(--nc-success-500);"&gt;Success&lt;/div&gt;
+&lt;div style="background-color: var(--nc-warning-500);"&gt;Warning&lt;/div&gt;
+&lt;div style="background-color: var(--nc-error-500);"&gt;Error&lt;/div&gt;
+            </div>
+        </section>
+
+        <!-- Buttons Test -->
+        <section class="test-section">
+            <h2 class="subsection-title">Buttons Component</h2>
+            
+            <!-- Button Variants -->
+            <h3>Button Variants</h3>
+            <div class="component-row">
+                <button class="nc-btn nc-btn-primary">Primary</button>
+                <button class="nc-btn nc-btn-secondary">Secondary</button>
+                <button class="nc-btn nc-btn-outline">Outline</button>
+                <button class="nc-btn nc-btn-ghost">Ghost</button>
+                <button class="nc-btn nc-btn-success">Success</button>
+                <button class="nc-btn nc-btn-warning">Warning</button>
+                <button class="nc-btn nc-btn-error">Error</button>
+            </div>
+            
+            <!-- Button Sizes -->
+            <h3>Button Sizes</h3>
+            <div class="component-row">
+                <button class="nc-btn nc-btn-primary nc-btn-xs">XS</button>
+                <button class="nc-btn nc-btn-primary nc-btn-sm">SM</button>
+                <button class="nc-btn nc-btn-primary">MD</button>
+                <button class="nc-btn nc-btn-primary nc-btn-lg">LG</button>
+                <button class="nc-btn nc-btn-primary nc-btn-xl">XL</button>
+            </div>
+            
+            <!-- Button States -->
+            <h3>Button States</h3>
+            <div class="component-row">
+                <button class="nc-btn nc-btn-primary">Normal</button>
+                <button class="nc-btn nc-btn-primary nc-btn-loading">Loading</button>
+                <button class="nc-btn nc-btn-primary" disabled>Disabled</button>
+            </div>
+            
+            <!-- Button Groups -->
+            <h3>Button Groups</h3>
+            <div class="component-row">
+                <div class="nc-btn-group">
+                    <button class="nc-btn nc-btn-primary">Left</button>
+                    <button class="nc-btn nc-btn-primary">Middle</button>
+                    <button class="nc-btn nc-btn-primary">Right</button>
+                </div>
+            </div>
+            
+            <!-- Icon Buttons -->
+            <h3>Icon Buttons</h3>
+            <div class="component-row">
+                <button class="nc-btn nc-btn-primary">
+                    <span class="nc-btn-icon-start">📧</span>
+                    Email
+                </button>
+                <button class="nc-btn nc-btn-outline nc-btn-icon">⚙️</button>
+                <button class="nc-btn nc-btn-primary nc-btn-fab">+</button>
+            </div>
+            
+            <div class="code-block">
+&lt;!-- Primary Button --&gt;
+&lt;button class="nc-btn nc-btn-primary"&gt;Primary&lt;/button&gt;
+
+&lt;!-- Small Outline Button --&gt;
+&lt;button class="nc-btn nc-btn-outline nc-btn-sm"&gt;Small Outline&lt;/button&gt;
+
+&lt;!-- Loading State --&gt;
+&lt;button class="nc-btn nc-btn-primary nc-btn-loading"&gt;Loading&lt;/button&gt;
+
+&lt;!-- Button Group --&gt;
+&lt;div class="nc-btn-group"&gt;
+    &lt;button class="nc-btn nc-btn-primary"&gt;Left&lt;/button&gt;
+    &lt;button class="nc-btn nc-btn-primary"&gt;Middle&lt;/button&gt;
+    &lt;button class="nc-btn nc-btn-primary"&gt;Right&lt;/button&gt;
+&lt;/div&gt;
+            </div>
+        </section>
+
+        <!-- Cards Test -->
+        <section class="test-section">
+            <h2 class="subsection-title">Cards Component</h2>
+            
+            <!-- Basic Card -->
+            <h3>Basic Card</h3>
+            <div class="component-grid">
+                <div class="nc-card nc-bg-slate-800 nc-color-slate-100">
+                    <div class="nc-card-body">
+                        <h4 class="nc-card-title nc-color-slate-100">Basic Card</h4>
+                        <p class="nc-card-text nc-color-slate-100">This is a basic card with some sample text content.</p>
+                        <button class="nc-btn nc-bg-emerald-500">Action</button>
+                    </div>
+                </div>
+                
+                <!-- Card with Header -->
+                <div class="nc-card">
+                    <div class="nc-card-header">
+                        <h4 class="nc-card-title">Card with Header</h4>
+                        <p class="nc-card-subtitle">This card has a header section</p>
+                    </div>
+                    <div class="nc-card-body">
+                        <p class="nc-card-text">Card body content goes here.</p>
+                    </div>
+                    <div class="nc-card-footer">
+                        <button class="nc-btn nc-btn-ghost">Cancel</button>
+                        <button class="nc-btn nc-btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card Variants -->
+            <h3>Card Variants</h3>
+            <div class="component-grid">
+                <div class="nc-card nc-card-bordered">
+                    <div class="nc-card-body">
+                        <h4 class="nc-card-title">Bordered Card</h4>
+                        <p class="nc-card-text">This card has a bordered style.</p>
+                    </div>
+                </div>
+                
+                <div class="nc-card nc-card-shadow">
+                    <div class="nc-card-body">
+                        <h4 class="nc-card-title">Shadow Card</h4>
+                        <p class="nc-card-text">This card has enhanced shadows.</p>
+                    </div>
+                </div>
+                
+                <div class="nc-card nc-card-flat">
+                    <div class="nc-card-body">
+                        <h4 class="nc-card-title">Flat Card</h4>
+                        <p class="nc-card-text">This card has no shadow.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card Sizes -->
+            <h3>Card Sizes</h3>
+            <div class="component-grid">
+                <div class="nc-card nc-card-sm">
+                    <div class="nc-card-body">
+                        <h4 class="nc-card-title">Small Card</h4>
+                        <p class="nc-card-text">Compact card with less padding.</p>
+                    </div>
+                </div>
+                
+                <div class="nc-card nc-card-lg">
+                    <div class="nc-card-body">
+                        <h4 class="nc-card-title">Large Card</h4>
+                        <p class="nc-card-text">Spacious card with more padding.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="code-block">
+&lt;!-- Basic Card --&gt;
+&lt;div class="nc-card"&gt;
+    &lt;div class="nc-card-body"&gt;
+        &lt;h4 class="nc-card-title"&gt;Card Title&lt;/h4&gt;
+        &lt;p class="nc-card-text"&gt;Card content goes here.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Card with Header and Footer --&gt;
+&lt;div class="nc-card"&gt;
+    &lt;div class="nc-card-header"&gt;
+        &lt;h4 class="nc-card-title"&gt;Header&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="nc-card-body"&gt;
+        &lt;p class="nc-card-text"&gt;Body content&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="nc-card-footer"&gt;
+        &lt;button class="nc-btn nc-btn-primary"&gt;Action&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </div>
+        </section>
+
+        <!-- More components will be added here as we build them -->
+                 <!-- Forms Test -->
+        <section class="test-section">
+            <h2 class="subsection-title">Forms Component</h2>
+            
+            <!-- Basic Input Fields -->
+            <h3>Input Fields</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Default Input</label>
+                    <input type="text" class="nc-input" placeholder="Enter your text">
+                </div>
+                
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Small Input</label>
+                    <input type="text" class="nc-input nc-input-sm" placeholder="Small input">
+                </div>
+                
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Large Input</label>
+                    <input type="text" class="nc-input nc-input-lg" placeholder="Large input">
+                </div>
+            </div>
+            
+            <!-- Input States -->
+            <h3>Input States</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Success State</label>
+                    <input type="text" class="nc-input nc-input-success" value="Valid input" placeholder="Success">
+                    <div class="nc-form-helper">This field is valid</div>
+                </div>
+                
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Error State</label>
+                    <input type="text" class="nc-input nc-input-error" value="Invalid input" placeholder="Error">
+                    <div class="nc-form-error">This field is required</div>
+                </div>
+                
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Disabled State</label>
+                    <input type="text" class="nc-input nc-input-disabled" value="Disabled field" disabled>
+                </div>
+            </div>
+            
+            <!-- Textarea -->
+            <h3>Textarea</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Message</label>
+                    <textarea class="nc-textarea" placeholder="Enter your message" rows="4"></textarea>
+                </div>
+            </div>
+            
+            <!-- Select Dropdowns -->
+            <h3>Select Dropdowns</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Default Select</label>
+                    <select class="nc-select">
+                        <option value="">Choose an option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+                
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Small Select</label>
+                    <select class="nc-select nc-select-sm">
+                        <option value="">Small select</option>
+                        <option value="1">Option 1</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Checkboxes & Radios -->
+            <h3>Checkboxes & Radios</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Checkboxes</label>
+                    <div class="nc-checkbox-group">
+                        <label class="nc-checkbox">
+                            <input type="checkbox" class="nc-checkbox-input" checked>
+                            <span class="nc-checkbox-label">Option 1</span>
+                        </label>
+                        <label class="nc-checkbox">
+                            <input type="checkbox" class="nc-checkbox-input">
+                            <span class="nc-checkbox-label">Option 2</span>
+                        </label>
+                        <label class="nc-checkbox">
+                            <input type="checkbox" class="nc-checkbox-input">
+                            <span class="nc-checkbox-label">Option 3</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Radio Buttons</label>
+                    <div class="nc-radio-group">
+                        <label class="nc-radio">
+                            <input type="radio" name="radio-group" class="nc-radio-input" checked>
+                            <span class="nc-radio-label">Option A</span>
+                        </label>
+                        <label class="nc-radio">
+                            <input type="radio" name="radio-group" class="nc-radio-input">
+                            <span class="nc-radio-label">Option B</span>
+                        </label>
+                        <label class="nc-radio">
+                            <input type="radio" name="radio-group" class="nc-radio-input">
+                            <span class="nc-radio-label">Option C</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Switches -->
+            <h3>Switches</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Toggle Switches</label>
+                    <div class="nc-checkbox-group">
+                        <label class="nc-switch">
+                            <input type="checkbox" class="nc-switch-input" checked>
+                            <span class="nc-switch-label">Enabled</span>
+                        </label>
+                        <label class="nc-switch">
+                            <input type="checkbox" class="nc-switch-input">
+                            <span class="nc-switch-label">Disabled</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- File Upload -->
+            <h3>File Upload</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Upload File</label>
+                    <input type="file" class="nc-file-input">
+                    <div class="nc-form-helper">Click to upload or drag and drop</div>
+                </div>
+            </div>
+            
+            <!-- Search Input -->
+            <h3>Search Input</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Search</label>
+                    <div class="nc-search">
+                        <span class="nc-search-icon">🔍</span>
+                        <input type="search" class="nc-input nc-search-input" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Input Groups -->
+            <h3>Input Groups</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">With Addon</label>
+                    <div class="nc-input-group">
+                        <span class="nc-input-group-addon">https://</span>
+                        <input type="text" class="nc-input" placeholder="website.com">
+                    </div>
+                </div>
+                
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Currency</label>
+                    <div class="nc-input-group">
+                        <input type="text" class="nc-input" placeholder="0.00">
+                        <span class="nc-input-group-addon">USD</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Form Layouts -->
+            <h3>Form Layouts</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Horizontal Form</label>
+                    <div class="nc-form-horizontal">
+                        <label class="nc-form-label">Email:</label>
+                        <input type="email" class="nc-input" placeholder="email@example.com">
+                        
+                        <label class="nc-form-label">Password:</label>
+                        <input type="password" class="nc-input" placeholder="Enter password">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="code-block">
+&lt;!-- Basic Input --&gt;
+&lt;div class="nc-form-group"&gt;
+    &lt;label class="nc-form-label"&gt;Email&lt;/label&gt;
+    &lt;input type="email" class="nc-input" placeholder="Enter email"&gt;
+&lt;/div&gt;
+
+&lt;!-- Checkbox --&gt;
+&lt;label class="nc-checkbox"&gt;
+    &lt;input type="checkbox" class="nc-checkbox-input"&gt;
+    &lt;span class="nc-checkbox-label"&gt;Accept terms&lt;/span&gt;
+&lt;/label&gt;
+
+&lt;!-- Select --&gt;
+&lt;select class="nc-select"&gt;
+    &lt;option&gt;Choose option&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;!-- Switch --&gt;
+&lt;label class="nc-switch"&gt;
+    &lt;input type="checkbox" class="nc-switch-input"&gt;
+    &lt;span class="nc-switch-label"&gt;Toggle me&lt;/span&gt;
+&lt;/label&gt;
+            </div>
+        </section>
+
+                <!-- Navigation Test -->
+        <section class="test-section">
+            <h2 class="subsection-title">Navigation Component</h2>
+            
+            <!-- Basic Navigation -->
+            <h3>Basic Navigation</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Horizontal Navigation</label>
+                    <ul class="nc-nav nc-nav-horizontal">
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link active">Home</a>
+                        </li>
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link">About</a>
+                        </li>
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link">Services</a>
+                        </li>
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Vertical Navigation</label>
+                    <ul class="nc-nav nc-nav-vertical" style="max-width: 200px;">
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link active">Dashboard</a>
+                        </li>
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link">Profile</a>
+                        </li>
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link">Settings</a>
+                        </li>
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link">Messages</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Navigation Variants -->
+            <h3>Navigation Variants</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Tabs Navigation</label>
+                    <ul class="nc-nav nc-nav-horizontal nc-nav-tabs">
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link active">Profile</a>
+                        </li>
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link">Settings</a>
+                        </li>
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link">Billing</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Pills Navigation</label>
+                    <ul class="nc-nav nc-nav-horizontal nc-nav-pills">
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link active">Active</a>
+                        </li>
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link">Link</a>
+                        </li>
+                        <li class="nc-nav-item">
+                            <a href="#" class="nc-nav-link">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Navbar -->
+            <h3>Navbar</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Default Navbar</label>
+                    <div class="nc-navbar">
+                        <a href="#" class="nc-navbar-brand">NestCSS</a>
+                        <ul class="nc-navbar-nav">
+                            <li class="nc-nav-item">
+                                <a href="#" class="nc-nav-link active">Home</a>
+                            </li>
+                            <li class="nc-nav-item">
+                                <a href="#" class="nc-nav-link">Features</a>
+                            </li>
+                            <li class="nc-nav-item">
+                                <a href="#" class="nc-nav-link">Pricing</a>
+                            </li>
+                            <li class="nc-nav-item">
+                                <a href="#" class="nc-nav-link">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Primary Navbar</label>
+                    <div class="nc-navbar nc-navbar-primary">
+                        <a href="#" class="nc-navbar-brand">NestCSS</a>
+                        <ul class="nc-navbar-nav">
+                            <li class="nc-nav-item">
+                                <a href="#" class="nc-nav-link active">Home</a>
+                            </li>
+                            <li class="nc-nav-item">
+                                <a href="#" class="nc-nav-link">Dashboard</a>
+                            </li>
+                            <li class="nc-nav-item">
+                                <a href="#" class="nc-nav-link">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dropdown Menus -->
+            <h3>Dropdown Menus</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Basic Dropdown</label>
+                    <div class="nc-dropdown">
+                        <button class="nc-dropdown-toggle nc-nav-link">
+                            Dropdown ▼
+                        </button>
+                        <div class="nc-dropdown-menu">
+                            <a href="#" class="nc-dropdown-item">Action</a>
+                            <a href="#" class="nc-dropdown-item">Another action</a>
+                            <div class="nc-dropdown-divider"></div>
+                            <a href="#" class="nc-dropdown-item">Separated link</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Dropdown in Navbar</label>
+                    <div class="nc-navbar">
+                        <a href="#" class="nc-navbar-brand">Brand</a>
+                        <ul class="nc-navbar-nav">
+                            <li class="nc-nav-item">
+                                <a href="#" class="nc-nav-link">Home</a>
+                            </li>
+                            <li class="nc-nav-item nc-dropdown">
+                                <a href="#" class="nc-dropdown-toggle nc-nav-link">
+                                    Services ▼
+                                </a>
+                                <div class="nc-dropdown-menu">
+                                    <a href="#" class="nc-dropdown-item">Web Design</a>
+                                    <a href="#" class="nc-dropdown-item">Development</a>
+                                    <a href="#" class="nc-dropdown-item">SEO</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Breadcrumb -->
+            <h3>Breadcrumb</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Page Navigation</label>
+                    <nav>
+                        <ol class="nc-breadcrumb">
+                            <li class="nc-breadcrumb-item">
+                                <a href="#" class="nc-breadcrumb-link">Home</a>
+                            </li>
+                            <li class="nc-breadcrumb-item">
+                                <a href="#" class="nc-breadcrumb-link">Library</a>
+                            </li>
+                            <li class="nc-breadcrumb-item active">
+                                <a href="#" class="nc-breadcrumb-link">Data</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <h3>Pagination</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Default Pagination</label>
+                    <nav>
+                        <ul class="nc-pagination">
+                            <li class="nc-page-item">
+                                <a href="#" class="nc-page-link">Previous</a>
+                            </li>
+                            <li class="nc-page-item">
+                                <a href="#" class="nc-page-link">1</a>
+                            </li>
+                            <li class="nc-page-item active">
+                                <a href="#" class="nc-page-link">2</a>
+                            </li>
+                            <li class="nc-page-item">
+                                <a href="#" class="nc-page-link">3</a>
+                            </li>
+                            <li class="nc-page-item">
+                                <a href="#" class="nc-page-link">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Pagination Sizes</label>
+                    <div class="component-row">
+                        <ul class="nc-pagination nc-pagination-sm">
+                            <li class="nc-page-item"><a href="#" class="nc-page-link">1</a></li>
+                            <li class="nc-page-item active"><a href="#" class="nc-page-link">2</a></li>
+                            <li class="nc-page-item"><a href="#" class="nc-page-link">3</a></li>
+                        </ul>
+                        
+                        <ul class="nc-pagination nc-pagination-lg">
+                            <li class="nc-page-item"><a href="#" class="nc-page-link">1</a></li>
+                            <li class="nc-page-item active"><a href="#" class="nc-page-link">2</a></li>
+                            <li class="nc-page-item"><a href="#" class="nc-page-link">3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mega Menu -->
+            <h3>Mega Menu</h3>
+            <div class="component-grid">
+                <div class="nc-form-group">
+                    <label class="nc-form-label">Mega Menu Example</label>
+                    <div class="nc-navbar">
+                        <a href="#" class="nc-navbar-brand">Mega Menu</a>
+                        <ul class="nc-navbar-nav">
+                            <li class="nc-nav-item nc-dropdown">
+                                <a href="#" class="nc-dropdown-toggle nc-nav-link">
+                                    Products ▼
+                                </a>
+                                <div class="nc-mega-menu">
+                                    <div class="nc-mega-menu-content">
+                                        <div class="nc-mega-menu-col">
+                                            <h4 class="nc-mega-menu-title">Design</h4>
+                                            <ul class="nc-nav nc-nav-vertical">
+                                                <li class="nc-nav-item">
+                                                    <a href="#" class="nc-nav-link">UI Design</a>
+                                                </li>
+                                                <li class="nc-nav-item">
+                                                    <a href="#" class="nc-nav-link">UX Design</a>
+                                                </li>
+                                                <li class="nc-nav-item">
+                                                    <a href="#" class="nc-nav-link">Graphics</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="nc-mega-menu-col">
+                                            <h4 class="nc-mega-menu-title">Development</h4>
+                                            <ul class="nc-nav nc-nav-vertical">
+                                                <li class="nc-nav-item">
+                                                    <a href="#" class="nc-nav-link">Web</a>
+                                                </li>
+                                                <li class="nc-nav-item">
+                                                    <a href="#" class="nc-nav-link">Mobile</a>
+                                                </li>
+                                                <li class="nc-nav-item">
+                                                    <a href="#" class="nc-nav-link">API</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block">
+&lt;!-- Basic Navigation --&gt;
+&lt;ul class="nc-nav nc-nav-horizontal"&gt;
+    &lt;li class="nc-nav-item"&gt;
+        &lt;a href="#" class="nc-nav-link active"&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nc-nav-item"&gt;
+        &lt;a href="#" class="nc-nav-link"&gt;About&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Navbar --&gt;
+&lt;div class="nc-navbar"&gt;
+    &lt;a href="#" class="nc-navbar-brand"&gt;Brand&lt;/a&gt;
+    &lt;ul class="nc-navbar-nav"&gt;
+        &lt;li class="nc-nav-item"&gt;
+            &lt;a href="#" class="nc-nav-link"&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- Dropdown --&gt;
+&lt;div class="nc-dropdown"&gt;
+    &lt;button class="nc-dropdown-toggle"&gt;Menu ▼&lt;/button&gt;
+    &lt;div class="nc-dropdown-menu"&gt;
+        &lt;a href="#" class="nc-dropdown-item"&gt;Item 1&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Pagination --&gt;
+&lt;ul class="nc-pagination"&gt;
+    &lt;li class="nc-page-item"&gt;
+        &lt;a href="#" class="nc-page-link"&gt;1&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+            </div>
+        </section>
+
+                <!-- Alerts Test -->
+        <section class="test-section">
+            <h2 class="subsection-title">Alerts Component</h2>
+            
+            <!-- Basic Alert Variants -->
+            <h3>Basic Alert Variants</h3>
+            <div class="component-grid">
+                <div class="nc-alert nc-alert-primary">
+                    <strong class="nc-alert-title">Primary Alert</strong>
+                    This is a primary alert with important information.
+                </div>
+                
+                <div class="nc-alert nc-alert-success">
+                    <strong class="nc-alert-title">Success Alert</strong>
+                    This is a success alert indicating a successful action.
+                </div>
+                
+                <div class="nc-alert nc-alert-warning">
+                    <strong class="nc-alert-title">Warning Alert</strong>
+                    This is a warning alert indicating potential issues.
+                </div>
+                
+                <div class="nc-alert nc-alert-error">
+                    <strong class="nc-alert-title">Error Alert</strong>
+                    This is an error alert indicating a problem that needs attention.
+                </div>
+                
+                <div class="nc-alert nc-alert-info">
+                    <strong class="nc-alert-title">Info Alert</strong>
+                    This is an info alert with general information.
+                </div>
+            </div>
+            
+            <!-- Alerts with Icons -->
+            <h3>Alerts with Icons</h3>
+            <div class="component-grid">
+                <div class="nc-alert nc-alert-success nc-alert-has-icon">
+                    <span class="nc-alert-icon"></span>
+                    <div class="nc-alert-content">
+                        <strong class="nc-alert-title">Success!</strong>
+                        Your action was completed successfully.
+                    </div>
+                </div>
+                
+                <div class="nc-alert nc-alert-error nc-alert-has-icon">
+                    <span class="nc-alert-icon"></span>
+                    <div class="nc-alert-content">
+                        <strong class="nc-alert-title">Error!</strong>
+                        Something went wrong. Please try again.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dismissible Alerts -->
+            <h3>Dismissible Alerts</h3>
+            <div class="component-grid">
+                <div class="nc-alert nc-alert-primary nc-alert-dismissible">
+                    <strong class="nc-alert-title">Dismissible Alert</strong>
+                    This alert can be closed by clicking the X button.
+                    <button class="nc-alert-close">×</button>
+                </div>
+                
+                <div class="nc-alert nc-alert-warning nc-alert-dismissible">
+                    <span class="nc-alert-icon"></span>
+                    <div class="nc-alert-content">
+                        <strong class="nc-alert-title">Warning with Icon</strong>
+                        This dismissible alert includes an icon and close button.
+                    </div>
+                    <button class="nc-alert-close">×</button>
+                </div>
+            </div>
+            
+            <!-- Alert Sizes -->
+            <h3>Alert Sizes</h3>
+            <div class="component-grid">
+                <div class="nc-alert nc-alert-info nc-alert-sm">
+                    <strong class="nc-alert-title">Small Alert</strong>
+                    This is a small alert with compact padding.
+                </div>
+                
+                <div class="nc-alert nc-alert-info">
+                    <strong class="nc-alert-title">Medium Alert</strong>
+                    This is a medium alert with default padding.
+                </div>
+                
+                <div class="nc-alert nc-alert-info nc-alert-lg">
+                    <strong class="nc-alert-title">Large Alert</strong>
+                    This is a large alert with more spacious padding.
+                </div>
+            </div>
+            
+            <!-- Alert Types -->
+            <h3>Alert Types</h3>
+            <div class="component-grid">
+                <div class="nc-alert nc-alert-primary nc-alert-outline">
+                    <strong class="nc-alert-title">Outline Alert</strong>
+                    This alert has an outline style with transparent background.
+                </div>
+                
+                <div class="nc-alert nc-alert-success nc-alert-solid">
+                    <strong class="nc-alert-title">Solid Alert</strong>
+                    This alert has a solid background color.
+                </div>
+                
+                <div class="nc-alert nc-alert-warning nc-alert-banner">
+                    <strong class="nc-alert-title">Banner Alert</strong>
+                    This alert spans full width with no side borders.
+                </div>
+            </div>
+            
+            <!-- Alerts with Actions -->
+            <h3>Alerts with Actions</h3>
+            <div class="component-grid">
+                <div class="nc-alert nc-alert-warning">
+                    <strong class="nc-alert-title">Session Expiring</strong>
+                    Your session will expire in 5 minutes.
+                    <div class="nc-alert-actions">
+                        <button class="nc-btn nc-btn-warning nc-btn-sm">Extend Session</button>
+                        <button class="nc-btn nc-btn-ghost nc-btn-sm">Logout</button>
+                    </div>
+                </div>
+                
+                <div class="nc-alert nc-alert-error nc-alert-dismissible">
+                    <strong class="nc-alert-title">Upload Failed</strong>
+                    There was an error uploading your file.
+                    <div class="nc-alert-actions">
+                        <button class="nc-btn nc-btn-error nc-btn-sm">Retry</button>
+                        <button class="nc-btn nc-btn-ghost nc-btn-sm">Cancel</button>
+                    </div>
+                    <button class="nc-alert-close">×</button>
+                </div>
+            </div>
+            
+            <!-- Interactive Alerts -->
+            <h3>Interactive Alerts</h3>
+            <div class="component-grid">
+                <div class="nc-alert nc-alert-info nc-alert-interactive">
+                    <strong class="nc-alert-title">Clickable Alert</strong>
+                    This alert is interactive and can be clicked for more details.
+                </div>
+                
+                <div class="nc-alert nc-alert-primary nc-alert-interactive nc-alert-has-icon">
+                    <span class="nc-alert-icon"></span>
+                    <div class="nc-alert-content">
+                        <strong class="nc-alert-title">New Feature Available</strong>
+                        Click to learn about our latest update.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Complex Alert Example -->
+            <h3>Complex Alert Example</h3>
+            <div class="component-grid">
+                <div class="nc-alert nc-alert-success nc-alert-dismissible nc-alert-has-icon">
+                    <span class="nc-alert-icon"></span>
+                    <div class="nc-alert-content">
+                        <strong class="nc-alert-title">Payment Successful!</strong>
+                        <p>Your payment of $99.00 has been processed successfully. A confirmation email has been sent to your registered email address.</p>
+                        <div class="nc-alert-actions">
+                            <button class="nc-btn nc-btn-success nc-btn-sm">View Receipt</button>
+                            <button class="nc-btn nc-btn-ghost nc-btn-sm">Download Invoice</button>
+                        </div>
+                    </div>
+                    <button class="nc-alert-close">×</button>
+                </div>
+            </div>
+
+            <div class="code-block">
+&lt;!-- Basic Alert --&gt;
+&lt;div class="nc-alert nc-alert-primary"&gt;
+    &lt;strong class="nc-alert-title"&gt;Primary Alert&lt;/strong&gt;
+    This is a primary alert with important information.
+&lt;/div&gt;
+
+&lt;!-- Alert with Icon --&gt;
+&lt;div class="nc-alert nc-alert-success nc-alert-has-icon"&gt;
+    &lt;span class="nc-alert-icon"&gt;&lt;/span&gt;
+    &lt;div class="nc-alert-content"&gt;
+        &lt;strong class="nc-alert-title"&gt;Success!&lt;/strong&gt;
+        Your action was completed successfully.
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Dismissible Alert --&gt;
+&lt;div class="nc-alert nc-alert-warning nc-alert-dismissible"&gt;
+    &lt;strong class="nc-alert-title"&gt;Warning&lt;/strong&gt;
+    This alert can be dismissed.
+    &lt;button class="nc-alert-close"&gt;×&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Alert with Actions --&gt;
+&lt;div class="nc-alert nc-alert-error"&gt;
+    &lt;strong class="nc-alert-title"&gt;Error&lt;/strong&gt;
+    Something went wrong.
+    &lt;div class="nc-alert-actions"&gt;
+        &lt;button class="nc-btn nc-btn-error nc-btn-sm"&gt;Retry&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </div>
+        </section>
+
+        <script>
+            // Alert dismiss functionality
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('nc-alert-close')) {
+                    e.target.closest('.nc-alert').style.display = 'none';
+                }
+                
+                // Interactive alert demo
+                if (e.target.classList.contains('nc-alert-interactive')) {
+                    alert('Alert clicked! This could open a modal or navigate to another page.');
+                }
+            });
+        </script>
+
+                <!-- Badges Test -->
+        <section class="test-section">
+            <h2 class="subsection-title">Badges Component</h2>
+            
+            <!-- Basic Badge Variants -->
+            <h3>Basic Badge Variants</h3>
+            <div class="component-grid">
+                <div class="component-row">
+                    <span class="nc-badge nc-badge-primary">Primary</span>
+                    <span class="nc-badge nc-badge-success">Success</span>
+                    <span class="nc-badge nc-badge-warning">Warning</span>
+                    <span class="nc-badge nc-badge-error">Error</span>
+                    <span class="nc-badge nc-badge-info">Info</span>
+                </div>
+            </div>
+            
+            <!-- Badge Styles -->
+            <h3>Badge Styles</h3>
+            <div class="component-grid">
+                <div class="component-row">
+                    <span class="nc-badge nc-badge-primary nc-badge-outline">Outline</span>
+                    <span class="nc-badge nc-badge-success nc-badge-outline">Outline</span>
+                    <span class="nc-badge nc-badge-primary nc-badge-subtle">Subtle</span>
+                    <span class="nc-badge nc-badge-success nc-badge-subtle">Subtle</span>
+                </div>
+            </div>
+            
+            <!-- Badge Sizes -->
+            <h3>Badge Sizes</h3>
+            <div class="component-grid">
+                <div class="component-row">
+                    <span class="nc-badge nc-badge-primary nc-badge-xs">XS</span>
+                    <span class="nc-badge nc-badge-primary nc-badge-sm">SM</span>
+                    <span class="nc-badge nc-badge-primary">MD</span>
+                    <span class="nc-badge nc-badge-primary nc-badge-lg">LG</span>
+                    <span class="nc-badge nc-badge-primary nc-badge-xl">XL</span>
+                </div>
+            </div>
+            
+            <!-- Badges with Icons -->
+            <h3>Badges with Icons</h3>
+            <div class="component-grid">
+                <div class="component-row">
+                    <span class="nc-badge nc-badge-success nc-badge-has-icon">
+                        <span class="nc-badge-icon">✓</span>
+                        Success
+                    </span>
+                    <span class="nc-badge nc-badge-error nc-badge-has-icon">
+                        <span class="nc-badge-icon">✕</span>
+                        Error
+                    </span>
+                    <span class="nc-badge nc-badge-warning nc-badge-has-icon">
+                        <span class="nc-badge-icon">!</span>
+                        Warning
+                    </span>
+                    <span class="nc-badge nc-badge-info nc-badge-has-icon">
+                        <span class="nc-badge-icon">i</span>
+                        Info
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Badge Types -->
+            <h3>Badge Types</h3>
+            <div class="component-grid">
+                <div class="component-row">
+                    <span class="nc-badge nc-badge-success nc-badge-status" title="Online"></span>
+                    <span class="nc-badge nc-badge-error nc-badge-status" title="Offline"></span>
+                    <span class="nc-badge nc-badge-warning nc-badge-status" title="Away"></span>
+                    
+                    <span class="nc-badge nc-badge-primary nc-badge-count">5</span>
+                    <span class="nc-badge nc-badge-error nc-badge-count">99+</span>
+                    <span class="nc-badge nc-badge-success nc-badge-count">1</span>
+                    
+                    <span class="nc-badge nc-badge-primary nc-badge-square">Square</span>
+                    <span class="nc-badge nc-badge-success nc-badge-pill">Pill</span>
+                </div>
+            </div>
+            
+            <!-- Badge Positions -->
+            <h3>Badge Positions</h3>
+            <div class="component-grid">
+                <div class="component-row">
+                    <div class="nc-badge-container" style="display: inline-block; margin: 20px;">
+                        <button class="nc-btn nc-btn-primary">Notifications</button>
+                        <span class="nc-badge nc-badge-error nc-badge-count nc-badge-top-right">3</span>
+                    </div>
+                    
+                    <div class="nc-badge-container" style="display: inline-block; margin: 20px;">
+                        <button class="nc-btn nc-btn-outline">Messages</button>
+                        <span class="nc-badge nc-badge-primary nc-badge-count nc-badge-top-left">12</span>
+                    </div>
+                    
+                    <div class="nc-badge-container" style="display: inline-block; margin: 20px;">
+                        <div style="width: 40px; height: 40px; background: var(--nc-slate-300); border-radius: 50%;"></div>
+                        <span class="nc-badge nc-badge-success nc-badge-status nc-badge-bottom-right"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Animated Badges -->
+            <h3>Animated Badges</h3>
+            <div class="component-grid">
+                <div class="component-row">
+                    <span class="nc-badge nc-badge-primary nc-badge-pulse">Live</span>
+                    <span class="nc-badge nc-badge-success nc-badge-pulse">Online</span>
+                    <span class="nc-badge nc-badge-error nc-badge-pulse">Alert</span>
+                    <span class="nc-badge nc-badge-warning nc-badge-bounce">New</span>
+                </div>
+            </div>
+            
+            <!-- Badge Groups -->
+            <h3>Badge Groups</h3>
+            <div class="component-grid">
+                <div class="component-row">
+                    <div class="nc-badge-group">
+                        <span class="nc-badge nc-badge-primary">React</span>
+                        <span class="nc-badge nc-badge-success">Vue</span>
+                        <span class="nc-badge nc-badge-warning">Angular</span>
+                        <span class="nc-badge nc-badge-error">Svelte</span>
+                    </div>
+                </div>
+                
+                <div class="component-row">
+                    <div class="nc-badge-group nc-badge-group-stacked">
+                        <span class="nc-badge nc-badge-primary">Frontend</span>
+                        <span class="nc-badge nc-badge-success">Backend</span>
+                        <span class="nc-badge nc-badge-warning">DevOps</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Interactive Badges -->
+            <h3>Interactive Badges</h3>
+            <div class="component-grid">
+                <div class="component-row">
+                    <span class="nc-badge nc-badge-primary nc-badge-interactive" onclick="alert('Badge clicked!')">Click Me</span>
+                    
+                    <span class="nc-badge nc-badge-success nc-badge-removable">
+                        Removable
+                        <button class="nc-badge-remove" onclick="this.parentElement.remove()">×</button>
+                    </span>
+                    
+                    <span class="nc-badge nc-badge-warning nc-badge-removable">
+                        Tag
+                        <button class="nc-badge-remove" onclick="this.parentElement.remove()">×</button>
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Badges in Text -->
+            <h3>Badges in Text</h3>
+            <div class="component-grid">
+                <div class="component-row">
+                    <h3>Heading <span class="nc-badge nc-badge-primary">New</span></h3>
+                    <p>Paragraph with <span class="nc-badge nc-badge-success">badge</span> inline text.</p>
+                </div>
+                
+                <div class="component-row">
+                    <button class="nc-btn nc-btn-primary">
+                        Notifications
+                        <span class="nc-badge nc-badge-error">5</span>
+                    </button>
+                    
+                    <button class="nc-btn nc-btn-outline nc-btn-sm">
+                        Messages
+                        <span class="nc-badge nc-badge-primary">12</span>
+                    </button>
+                    
+                    <button class="nc-btn nc-btn-ghost nc-btn-lg">
+                        Updates
+                        <span class="nc-badge nc-badge-success">3</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Special Badges -->
+            <h3>Special Badges</h3>
+            <div class="component-grid">
+                <div class="component-row">
+                    <span class="nc-badge nc-badge-new">NEW</span>
+                    <span class="nc-badge nc-badge-featured">FEATURED</span>
+                    <span class="nc-badge nc-badge-premium">PREMIUM</span>
+                    <span class="nc-badge nc-badge-primary nc-badge-loading">Loading</span>
+                </div>
+            </div>
+            
+            <!-- Complex Examples -->
+            <h3>Complex Examples</h3>
+            <div class="component-grid">
+                <div class="component-row">
+                    <div class="nc-card" style="max-width: 300px;">
+                        <div class="nc-card-body">
+                            <h4 class="nc-card-title">
+                                Project Alpha
+                                <span class="nc-badge nc-badge-success nc-badge-sm">Active</span>
+                            </h4>
+                            <p class="nc-card-text">A web application with modern features.</p>
+                            <div class="nc-badge-group">
+                                <span class="nc-badge nc-badge-primary nc-badge-outline nc-badge-sm">React</span>
+                                <span class="nc-badge nc-badge-success nc-badge-outline nc-badge-sm">Node.js</span>
+                                <span class="nc-badge nc-badge-warning nc-badge-outline nc-badge-sm">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="nc-card" style="max-width: 300px;">
+                        <div class="nc-card-body">
+                            <div class="nc-badge-container" style="display: inline-block;">
+                                <h4 class="nc-card-title">User Profile</h4>
+                                <span class="nc-badge nc-badge-success nc-badge-status nc-badge-top-right"></span>
+                            </div>
+                            <p class="nc-card-text">Online user with active session.</p>
+                            <div class="nc-alert nc-alert-info nc-alert-sm">
+                                <span class="nc-badge nc-badge-new nc-badge-sm">NEW</span>
+                                Profile updated recently
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-block">
+&lt;!-- Basic Badge --&gt;
+&lt;span class="nc-badge nc-badge-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="nc-badge nc-badge-success"&gt;Success&lt;/span&gt;
+
+&lt;!-- Outline Badge --&gt;
+&lt;span class="nc-badge nc-badge-primary nc-badge-outline"&gt;Outline&lt;/span&gt;
+
+&lt;!-- Badge with Icon --&gt;
+&lt;span class="nc-badge nc-badge-success nc-badge-has-icon"&gt;
+    &lt;span class="nc-badge-icon"&gt;✓&lt;/span&gt;
+    Success
+&lt;/span&gt;
+
+&lt;!-- Status Badge --&gt;
+&lt;span class="nc-badge nc-badge-success nc-badge-status"&gt;&lt;/span&gt;
+
+&lt;!-- Count Badge --&gt;
+&lt;span class="nc-badge nc-badge-primary nc-badge-count"&gt;5&lt;/span&gt;
+
+&lt;!-- Badge on Button --&gt;
+&lt;button class="nc-btn nc-btn-primary"&gt;
+    Notifications
+    &lt;span class="nc-badge nc-badge-error"&gt;3&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;!-- Badge Group --&gt;
+&lt;div class="nc-badge-group"&gt;
+    &lt;span class="nc-badge nc-badge-primary"&gt;React&lt;/span&gt;
+    &lt;span class="nc-badge nc-badge-success"&gt;Vue&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;!-- Removable Badge --&gt;
+&lt;span class="nc-badge nc-badge-primary nc-badge-removable"&gt;
+    Tag
+    &lt;button class="nc-badge-remove"&gt;×&lt;/button&gt;
+&lt;/span&gt;
+            </div>
+        </section>
+
+        <script>
+            // Interactive badges demo
+            document.addEventListener('click', function(e) {
+                // Interactive badge click
+                if (e.target.classList.contains('nc-badge-interactive')) {
+                    alert('Interactive badge clicked!');
+                }
+                
+                // Remove badge when close button is clicked
+                if (e.target.classList.contains('nc-badge-remove')) {
+                    e.target.parentElement.remove();
+                }
+            });
+        </script>
+        
+    </div>
+
+    <script>
+        // Simple loading state demo for buttons
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('nc-btn') && 
+                !e.target.classList.contains('nc-btn-loading') &&
+                !e.target.disabled &&
+                e.target.textContent.includes('Loading')) {
+                
+                e.target.classList.add('nc-btn-loading');
+                setTimeout(() => {
+                    e.target.classList.remove('nc-btn-loading');
+                }, 2000);
+            }
+        });
+        
+        // Card hover effects demonstration
+        const cards = document.querySelectorAll('.nc-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transition = 'all 0.3s ease';
+            });
+        });
+    </script>
+</body>
+</html>

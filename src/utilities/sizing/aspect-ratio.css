@@ -1,0 +1,12 @@
+/* =======================================================
+   NESTCSS - ASPECT RATIO UTILITIES
+   ======================================================= */
+
+.nc-aspect-auto { aspect-ratio: auto !important; }
+.nc-aspect-square { aspect-ratio: 1 / 1 !important; }
+.nc-aspect-video { aspect-ratio: 16 / 9 !important; }
+.nc-aspect-4-3 { aspect-ratio: 4 / 3 !important; }
+.nc-aspect-3-2 { aspect-ratio: 3 / 2 !important; }
+.nc-aspect-2-3 { aspect-ratio: 2 / 3 !important; }
+.nc-aspect-3-4 { aspect-ratio: 3 / 4 !important; }
+.nc-aspect-9-16 { aspect-ratio: 9 / 16 !important; }

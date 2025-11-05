@@ -1,0 +1,59 @@
+/* =======================================================
+   NESTCSS - WIDTH UTILITIES
+   ======================================================= */
+
+/* Fixed Widths */
+.nc-w-0 { width: var(--nc-space-0) !important; }
+.nc-w-1 { width: var(--nc-space-1) !important; }
+.nc-w-2 { width: var(--nc-space-2) !important; }
+.nc-w-3 { width: var(--nc-space-3) !important; }
+.nc-w-4 { width: var(--nc-space-4) !important; }
+.nc-w-5 { width: var(--nc-space-5) !important; }
+.nc-w-6 { width: var(--nc-space-6) !important; }
+.nc-w-8 { width: var(--nc-space-8) !important; }
+.nc-w-10 { width: var(--nc-space-10) !important; }
+.nc-w-12 { width: var(--nc-space-12) !important; }
+.nc-w-16 { width: var(--nc-space-16) !important; }
+.nc-w-20 { width: var(--nc-space-20) !important; }
+.nc-w-24 { width: var(--nc-space-24) !important; }
+.nc-w-32 { width: var(--nc-space-32) !important; }
+.nc-w-40 { width: var(--nc-space-40) !important; }
+.nc-w-48 { width: var(--nc-space-48) !important; }
+.nc-w-56 { width: var(--nc-space-56) !important; }
+.nc-w-64 { width: var(--nc-space-64) !important; }
+
+/* Percentage Widths */
+.nc-w-1-2 { width: 50% !important; }
+.nc-w-1-3 { width: 33.333333% !important; }
+.nc-w-2-3 { width: 66.666667% !important; }
+.nc-w-1-4 { width: 25% !important; }
+.nc-w-2-4 { width: 50% !important; }
+.nc-w-3-4 { width: 75% !important; }
+.nc-w-1-5 { width: 20% !important; }
+.nc-w-2-5 { width: 40% !important; }
+.nc-w-3-5 { width: 60% !important; }
+.nc-w-4-5 { width: 80% !important; }
+.nc-w-1-6 { width: 16.666667% !important; }
+.nc-w-2-6 { width: 33.333333% !important; }
+.nc-w-3-6 { width: 50% !important; }
+.nc-w-4-6 { width: 66.666667% !important; }
+.nc-w-5-6 { width: 83.333333% !important; }
+.nc-w-1-12 { width: 8.333333% !important; }
+.nc-w-2-12 { width: 16.666667% !important; }
+.nc-w-3-12 { width: 25% !important; }
+.nc-w-4-12 { width: 33.333333% !important; }
+.nc-w-5-12 { width: 41.666667% !important; }
+.nc-w-6-12 { width: 50% !important; }
+.nc-w-7-12 { width: 58.333333% !important; }
+.nc-w-8-12 { width: 66.666667% !important; }
+.nc-w-9-12 { width: 75% !important; }
+.nc-w-10-12 { width: 83.333333% !important; }
+.nc-w-11-12 { width: 91.666667% !important; }
+
+/* Relative Widths */
+.nc-w-auto { width: auto !important; }
+.nc-w-full { width: 100% !important; }
+.nc-w-screen { width: 100vw !important; }
+.nc-w-min { width: min-content !important; }
+.nc-w-max { width: max-content !important; }
+.nc-w-fit { width: fit-content !important; }

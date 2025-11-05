@@ -1,0 +1,26 @@
+/* =======================================================
+   NESTCSS - OPACITY UTILITIES
+   ======================================================= */
+
+/* Opacity */
+.nc-opacity-0 { opacity: 0 !important; }
+.nc-opacity-5 { opacity: 0.05 !important; }
+.nc-opacity-10 { opacity: 0.1 !important; }
+.nc-opacity-15 { opacity: 0.15 !important; }
+.nc-opacity-20 { opacity: 0.2 !important; }
+.nc-opacity-25 { opacity: 0.25 !important; }
+.nc-opacity-30 { opacity: 0.3 !important; }
+.nc-opacity-35 { opacity: 0.35 !important; }
+.nc-opacity-40 { opacity: 0.4 !important; }
+.nc-opacity-45 { opacity: 0.45 !important; }
+.nc-opacity-50 { opacity: 0.5 !important; }
+.nc-opacity-55 { opacity: 0.55 !important; }
+.nc-opacity-60 { opacity: 0.6 !important; }
+.nc-opacity-65 { opacity: 0.65 !important; }
+.nc-opacity-70 { opacity: 0.7 !important; }
+.nc-opacity-75 { opacity: 0.75 !important; }
+.nc-opacity-80 { opacity: 0.8 !important; }
+.nc-opacity-85 { opacity: 0.85 !important; }
+.nc-opacity-90 { opacity: 0.9 !important; }
+.nc-opacity-95 { opacity: 0.95 !important; }
+.nc-opacity-100 { opacity: 1 !important; }

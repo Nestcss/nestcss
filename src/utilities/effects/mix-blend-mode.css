@@ -1,0 +1,39 @@
+/* =======================================================
+   NESTCSS - MIX BLEND MODE UTILITIES
+   ======================================================= */
+
+/* Mix Blend Mode */
+.nc-mix-blend-normal { mix-blend-mode: normal !important; }
+.nc-mix-blend-multiply { mix-blend-mode: multiply !important; }
+.nc-mix-blend-screen { mix-blend-mode: screen !important; }
+.nc-mix-blend-overlay { mix-blend-mode: overlay !important; }
+.nc-mix-blend-darken { mix-blend-mode: darken !important; }
+.nc-mix-blend-lighten { mix-blend-mode: lighten !important; }
+.nc-mix-blend-color-dodge { mix-blend-mode: color-dodge !important; }
+.nc-mix-blend-color-burn { mix-blend-mode: color-burn !important; }
+.nc-mix-blend-hard-light { mix-blend-mode: hard-light !important; }
+.nc-mix-blend-soft-light { mix-blend-mode: soft-light !important; }
+.nc-mix-blend-difference { mix-blend-mode: difference !important; }
+.nc-mix-blend-exclusion { mix-blend-mode: exclusion !important; }
+.nc-mix-blend-hue { mix-blend-mode: hue !important; }
+.nc-mix-blend-saturation { mix-blend-mode: saturation !important; }
+.nc-mix-blend-color { mix-blend-mode: color !important; }
+.nc-mix-blend-luminosity { mix-blend-mode: luminosity !important; }
+
+/* Background Blend Mode */
+.nc-bg-blend-normal { background-blend-mode: normal !important; }
+.nc-bg-blend-multiply { background-blend-mode: multiply !important; }
+.nc-bg-blend-screen { background-blend-mode: screen !important; }
+.nc-bg-blend-overlay { background-blend-mode: overlay !important; }
+.nc-bg-blend-darken { background-blend-mode: darken !important; }
+.nc-bg-blend-lighten { background-blend-mode: lighten !important; }
+.nc-bg-blend-color-dodge { background-blend-mode: color-dodge !important; }
+.nc-bg-blend-color-burn { background-blend-mode: color-burn !important; }
+.nc-bg-blend-hard-light { background-blend-mode: hard-light !important; }
+.nc-bg-blend-soft-light { background-blend-mode: soft-light !important; }
+.nc-bg-blend-difference { background-blend-mode: difference !important; }
+.nc-bg-blend-exclusion { background-blend-mode: exclusion !important; }
+.nc-bg-blend-hue { background-blend-mode: hue !important; }
+.nc-bg-blend-saturation { background-blend-mode: saturation !important; }
+.nc-bg-blend-color { background-blend-mode: color !important; }
+.nc-bg-blend-luminosity { background-blend-mode: luminosity !important; }

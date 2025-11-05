@@ -1,0 +1,21 @@
+/* =======================================================
+   NESTCSS - OVERFLOW UTILITIES
+   ======================================================= */
+
+/* Overflow - Both axes */
+.nc-overflow-auto { overflow: auto !important; }
+.nc-overflow-hidden { overflow: hidden !important; }
+.nc-overflow-visible { overflow: visible !important; }
+.nc-overflow-scroll { overflow: scroll !important; }
+
+/* Overflow - Horizontal */
+.nc-overflow-x-auto { overflow-x: auto !important; }
+.nc-overflow-x-hidden { overflow-x: hidden !important; }
+.nc-overflow-x-visible { overflow-x: visible !important; }
+.nc-overflow-x-scroll { overflow-x: scroll !important; }
+
+/* Overflow - Vertical */
+.nc-overflow-y-auto { overflow-y: auto !important; }
+.nc-overflow-y-hidden { overflow-y: hidden !important; }
+.nc-overflow-y-visible { overflow-y: visible !important; }
+.nc-overflow-y-scroll { overflow-y: scroll !important; }

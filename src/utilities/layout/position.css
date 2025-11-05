@@ -1,0 +1,10 @@
+/* =======================================================
+   NESTCSS - POSITION UTILITIES
+   ======================================================= */
+
+/* Position Types */
+.nc-static { position: static !important; }
+.nc-fixed { position: fixed !important; }
+.nc-absolute { position: absolute !important; }
+.nc-relative { position: relative !important; }
+.nc-sticky { position: sticky !important; }

@@ -1,0 +1,320 @@
+/* =======================================================
+   NESTCSS BASE STYLES - ELEMENT-LEVEL STYLING
+   Sensible defaults for HTML elements using NESTCSS variables
+   ======================================================= */
+
+/* ========== TYPOGRAPHY ========== */
+
+/* Headings */
+h1 {
+  font-size: var(--nc-text-4xl);
+  font-weight: var(--nc-font-bold);
+  line-height: var(--nc-leading-tight);
+  color: var(--nc-slate-900);
+  margin-bottom: var(--nc-space-4);
+}
+
+h2 {
+  font-size: var(--nc-text-3xl);
+  font-weight: var(--nc-font-semibold);
+  line-height: var(--nc-leading-tight);
+  color: var(--nc-slate-800);
+  margin-bottom: var(--nc-space-3);
+}
+
+h3 {
+  font-size: var(--nc-text-2xl);
+  font-weight: var(--nc-font-semibold);
+  line-height: var(--nc-leading-tight);
+  color: var(--nc-slate-800);
+  margin-bottom: var(--nc-space-3);
+}
+
+h4 {
+  font-size: var(--nc-text-xl);
+  font-weight: var(--nc-font-semibold);
+  line-height: var(--nc-leading-tight);
+  color: var(--nc-slate-800);
+  margin-bottom: var(--nc-space-2);
+}
+
+h5 {
+  font-size: var(--nc-text-lg);
+  font-weight: var(--nc-font-semibold);
+  line-height: var(--nc-leading-tight);
+  color: var(--nc-slate-800);
+  margin-bottom: var(--nc-space-2);
+}
+
+h6 {
+  font-size: var(--nc-text-base);
+  font-weight: var(--nc-font-semibold);
+  line-height: var(--nc-leading-tight);
+  color: var(--nc-slate-700);
+  margin-bottom: var(--nc-space-2);
+}
+
+/* Paragraphs */
+p {
+  font-size: var(--nc-text-base);
+  line-height: var(--nc-leading-relaxed);
+  color: var(--nc-slate-700);
+  margin-bottom: var(--nc-space-4);
+}
+
+/* Links */
+a {
+  color: var(--nc-primary-600);
+  transition: color 0.15s ease-in-out;
+}
+
+a:hover {
+  color: var(--nc-primary-700);
+}
+
+a:focus-visible {
+  color: var(--nc-primary-700);
+  outline: 2px solid var(--nc-primary-500);
+  outline-offset: 2px;
+  border-radius: var(--nc-radius-sm);
+}
+
+/* Lists */
+ul:not([class]),
+ol:not([class]) {
+  margin-bottom: var(--nc-space-4);
+  padding-left: var(--nc-space-6);
+}
+
+ul:not([class]) {
+  list-style-type: disc;
+}
+
+ol:not([class]) {
+  list-style-type: decimal;
+}
+
+li:not([class]) {
+  margin-bottom: var(--nc-space-2);
+  line-height: var(--nc-leading-relaxed);
+}
+
+/* ========== FORMS ========== */
+
+/* Inputs */
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select {
+  width: 100%;
+  padding: var(--nc-space-2) var(--nc-space-3);
+  border: 1px solid var(--nc-slate-300);
+  border-radius: var(--nc-radius-md);
+  background-color: var(--nc-white);
+  font-size: var(--nc-text-base);
+  line-height: var(--nc-leading-normal);
+  transition: all 0.15s ease-in-out;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus,
+textarea:focus,
+select:focus {
+  border-color: var(--nc-primary-500);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+input:not([type="checkbox"]):not([type="radio"])::placeholder,
+textarea::placeholder {
+  color: var(--nc-slate-400);
+}
+
+/* Textarea */
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Select */
+select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right var(--nc-space-2) center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: var(--nc-space-10);
+  appearance: none;
+}
+
+/* Buttons */
+button:not([class]) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--nc-space-2) var(--nc-space-4);
+  background-color: var(--nc-primary-600);
+  color: var(--nc-white);
+  border-radius: var(--nc-radius-md);
+  font-weight: var(--nc-font-medium);
+  line-height: var(--nc-leading-normal);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+button:not([class]):hover {
+  background-color: var(--nc-primary-700);
+}
+
+button:not([class]):focus-visible {
+  outline: 2px solid var(--nc-primary-500);
+  outline-offset: 2px;
+}
+
+button:not([class]):active {
+  background-color: var(--nc-primary-800);
+}
+
+/* Checkboxes and Radios */
+input[type="checkbox"],
+input[type="radio"] {
+  width: 1rem;
+  height: 1rem;
+  margin-right: var(--nc-space-2);
+}
+
+input[type="checkbox"] {
+  border-radius: var(--nc-radius);
+}
+
+input[type="radio"] {
+  border-radius: var(--nc-radius-full);
+}
+
+/* Labels */
+label:not([class]) {
+  display: block;
+  font-size: var(--nc-text-sm);
+  font-weight: var(--nc-font-medium);
+  color: var(--nc-slate-700);
+  margin-bottom: var(--nc-space-2);
+}
+
+/* Fieldset and Legend */
+fieldset:not([class]) {
+  border: 1px solid var(--nc-slate-300);
+  border-radius: var(--nc-radius-md);
+  padding: var(--nc-space-4);
+  margin-bottom: var(--nc-space-4);
+}
+
+legend:not([class]) {
+  font-size: var(--nc-text-sm);
+  font-weight: var(--nc-font-medium);
+  color: var(--nc-slate-700);
+  padding: 0 var(--nc-space-2);
+}
+
+/* ========== TABLES ========== */
+
+table:not([class]) {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--nc-space-4);
+}
+
+th:not([class]) {
+  background-color: var(--nc-slate-50);
+  font-weight: var(--nc-font-semibold);
+  text-align: left;
+  padding: var(--nc-space-3) var(--nc-space-4);
+  border-bottom: 1px solid var(--nc-slate-300);
+}
+
+td:not([class]) {
+  padding: var(--nc-space-3) var(--nc-space-4);
+  border-bottom: 1px solid var(--nc-slate-200);
+}
+
+tr:not([class]):last-child td {
+  border-bottom: none;
+}
+
+/* ========== BLOCKQUOTES ========== */
+
+blockquote:not([class]) {
+  border-left: 4px solid var(--nc-slate-300);
+  padding-left: var(--nc-space-4);
+  margin: var(--nc-space-6) 0;
+  font-style: italic;
+  color: var(--nc-slate-600);
+}
+
+/* ========== CODE ========== */
+
+code:not([class]) {
+  background-color: var(--nc-slate-100);
+  color: var(--nc-slate-800);
+  padding: var(--nc-space-1) var(--nc-space-2);
+  border-radius: var(--nc-radius-sm);
+  font-family: var(--nc-font-mono);
+  font-size: 0.875em;
+}
+
+pre:not([class]) {
+  background-color: var(--nc-slate-900);
+  color: var(--nc-slate-100);
+  padding: var(--nc-space-4);
+  border-radius: var(--nc-radius-md);
+  overflow-x: auto;
+  margin: var(--nc-space-4) 0;
+  font-family: var(--nc-font-mono);
+  font-size: var(--nc-text-sm);
+  line-height: var(--nc-leading-relaxed);
+}
+
+pre:not([class]) code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* ========== HORIZONTAL RULE ========== */
+
+hr:not([class]) {
+  border: none;
+  height: 1px;
+  background-color: var(--nc-slate-300);
+  margin: var(--nc-space-8) 0;
+}
+
+/* ========== MEDIA ========== */
+
+figure:not([class]) {
+  margin: var(--nc-space-4) 0;
+}
+
+figcaption:not([class]) {
+  font-size: var(--nc-text-sm);
+  color: var(--nc-slate-600);
+  text-align: center;
+  margin-top: var(--nc-space-2);
+}
+
+/* ========== ACCESSIBILITY ========== */
+
+/* Skip link for keyboard users */
+.nc-skip-link {
+  position: absolute;
+  top: -40px;
+  left: var(--nc-space-4);
+  background: var(--nc-primary-600);
+  color: var(--nc-white);
+  padding: var(--nc-space-2) var(--nc-space-4);
+  border-radius: var(--nc-radius-md);
+  text-decoration: none;
+  z-index: var(--nc-z-50);
+  transition: top 0.2s ease-in-out;
+}
+
+.nc-skip-link:focus {
+  top: var(--nc-space-4);
+}

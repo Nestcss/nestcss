@@ -1,0 +1,10 @@
+/* =======================================================
+   NESTCSS - OBJECT FIT UTILITIES
+   ======================================================= */
+
+/* Object Fit */
+.nc-object-contain { object-fit: contain !important; }
+.nc-object-cover { object-fit: cover !important; }
+.nc-object-fill { object-fit: fill !important; }
+.nc-object-none { object-fit: none !important; }
+.nc-object-scale-down { object-fit: scale-down !important; }

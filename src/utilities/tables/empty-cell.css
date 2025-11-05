@@ -1,0 +1,88 @@
+/* =======================================================
+   EMPTY CELLS UTILITIES
+   ======================================================= */
+
+.nc-empty-cells-show {
+  empty-cells: show;
+}
+
+.nc-empty-cells-hide {
+  empty-cells: hide;
+}
+
+/* Empty cell background colors */
+.nc-empty-cell-bg-transparent {
+  background-color: transparent;
+}
+
+.nc-empty-cell-bg-slate-100 {
+  background-color: var(--nc-slate-100);
+}
+
+.nc-empty-cell-bg-slate-200 {
+  background-color: var(--nc-slate-200);
+}
+
+.nc-empty-cell-bg-gray-100 {
+  background-color: var(--nc-gray-100);
+}
+
+/* Empty cell borders */
+.nc-empty-cell-border-none {
+  border: none;
+}
+
+.nc-empty-cell-border-dashed {
+  border: 1px dashed var(--nc-slate-300);
+}
+
+.nc-empty-cell-border-dotted {
+  border: 1px dotted var(--nc-slate-300);
+}
+
+/* Empty cell content */
+.nc-empty-cell-content-none::before {
+  content: none;
+}
+
+.nc-empty-cell-content-dash::before {
+  content: "—";
+  color: var(--nc-slate-400);
+}
+
+.nc-empty-cell-content-asterisk::before {
+  content: "*";
+  color: var(--nc-slate-400);
+}
+
+.nc-empty-cell-content-n-a::before {
+  content: "N/A";
+  color: var(--nc-slate-400);
+  font-style: italic;
+}
+
+/* Empty cell text alignment */
+.nc-empty-cell-text-left {
+  text-align: left;
+}
+
+.nc-empty-cell-text-center {
+  text-align: center;
+}
+
+.nc-empty-cell-text-right {
+  text-align: right;
+}
+
+/* Empty cell vertical alignment */
+.nc-empty-cell-align-top {
+  vertical-align: top;
+}
+
+.nc-empty-cell-align-middle {
+  vertical-align: middle;
+}
+
+.nc-empty-cell-align-bottom {
+  vertical-align: bottom;
+}

@@ -1,0 +1,52 @@
+/* =======================================================
+   NESTCSS - BORDER WIDTH UTILITIES
+   ======================================================= */
+
+/* Border Width - All sides */
+.nc-border-0 { border-width: 0 !important; }
+.nc-border { border-width: 1px !important; }
+.nc-border-2 { border-width: 2px !important; }
+.nc-border-4 { border-width: 4px !important; }
+.nc-border-8 { border-width: 8px !important; }
+
+/* Border Width - Horizontal (left + right) */
+.nc-border-x-0 { border-left-width: 0 !important; border-right-width: 0 !important; }
+.nc-border-x { border-left-width: 1px !important; border-right-width: 1px !important; }
+.nc-border-x-2 { border-left-width: 2px !important; border-right-width: 2px !important; }
+.nc-border-x-4 { border-left-width: 4px !important; border-right-width: 4px !important; }
+.nc-border-x-8 { border-left-width: 8px !important; border-right-width: 8px !important; }
+
+/* Border Width - Vertical (top + bottom) */
+.nc-border-y-0 { border-top-width: 0 !important; border-bottom-width: 0 !important; }
+.nc-border-y { border-top-width: 1px !important; border-bottom-width: 1px !important; }
+.nc-border-y-2 { border-top-width: 2px !important; border-bottom-width: 2px !important; }
+.nc-border-y-4 { border-top-width: 4px !important; border-bottom-width: 4px !important; }
+.nc-border-y-8 { border-top-width: 8px !important; border-bottom-width: 8px !important; }
+
+/* Border Width - Top */
+.nc-border-t-0 { border-top-width: 0 !important; }
+.nc-border-t { border-top-width: 1px !important; }
+.nc-border-t-2 { border-top-width: 2px !important; }
+.nc-border-t-4 { border-top-width: 4px !important; }
+.nc-border-t-8 { border-top-width: 8px !important; }
+
+/* Border Width - Right */
+.nc-border-r-0 { border-right-width: 0 !important; }
+.nc-border-r { border-right-width: 1px !important; }
+.nc-border-r-2 { border-right-width: 2px !important; }
+.nc-border-r-4 { border-right-width: 4px !important; }
+.nc-border-r-8 { border-right-width: 8px !important; }
+
+/* Border Width - Bottom */
+.nc-border-b-0 { border-bottom-width: 0 !important; }
+.nc-border-b { border-bottom-width: 1px !important; }
+.nc-border-b-2 { border-bottom-width: 2px !important; }
+.nc-border-b-4 { border-bottom-width: 4px !important; }
+.nc-border-b-8 { border-bottom-width: 8px !important; }
+
+/* Border Width - Left */
+.nc-border-l-0 { border-left-width: 0 !important; }
+.nc-border-l { border-left-width: 1px !important; }
+.nc-border-l-2 { border-left-width: 2px !important; }
+.nc-border-l-4 { border-left-width: 4px !important; }
+.nc-border-l-8 { border-left-width: 8px !important; }

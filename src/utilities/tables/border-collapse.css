@@ -1,0 +1,57 @@
+/* =======================================================
+   BORDER COLLAPSE UTILITIES
+   ======================================================= */
+
+.nc-border-collapse {
+  border-collapse: collapse;
+}
+
+.nc-border-separate {
+  border-collapse: separate;
+}
+
+/* Border spacing for separated tables */
+.nc-border-spacing-0 {
+  border-spacing: 0;
+}
+
+.nc-border-spacing-1 {
+  border-spacing: var(--nc-space-1);
+}
+
+.nc-border-spacing-2 {
+  border-spacing: var(--nc-space-2);
+}
+
+.nc-border-spacing-4 {
+  border-spacing: var(--nc-space-4);
+}
+
+.nc-border-spacing-8 {
+  border-spacing: var(--nc-space-8);
+}
+
+/* Border spacing with x and y values */
+.nc-border-spacing-x-0 {
+  border-spacing: 0 var(--nc-space-0);
+}
+
+.nc-border-spacing-x-1 {
+  border-spacing: var(--nc-space-1) var(--nc-space-0);
+}
+
+.nc-border-spacing-x-2 {
+  border-spacing: var(--nc-space-2) var(--nc-space-0);
+}
+
+.nc-border-spacing-y-0 {
+  border-spacing: var(--nc-space-0) 0;
+}
+
+.nc-border-spacing-y-1 {
+  border-spacing: var(--nc-space-0) var(--nc-space-1);
+}
+
+.nc-border-spacing-y-2 {
+  border-spacing: var(--nc-space-0) var(--nc-space-2);
+}

@@ -1,0 +1,47 @@
+/* =======================================================
+   OUTLINE UTILITIES
+   ======================================================= */
+
+.nc-outline-none { 
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.nc-outline-0 { 
+  outline: 0;
+}
+
+.nc-outline-1 { 
+  outline: 1px solid;
+}
+
+.nc-outline-2 { 
+  outline: 2px solid;
+}
+
+.nc-outline-4 { 
+  outline: 4px solid;
+}
+
+.nc-outline-8 { 
+  outline: 8px solid;
+}
+
+/* Outline Offset */
+.nc-outline-offset-0 { outline-offset: 0; }
+.nc-outline-offset-1 { outline-offset: 1px; }
+.nc-outline-offset-2 { outline-offset: 2px; }
+.nc-outline-offset-4 { outline-offset: 4px; }
+.nc-outline-offset-8 { outline-offset: 8px; }
+
+/* Outline Style */
+.nc-outline-dashed { outline-style: dashed; }
+.nc-outline-dotted { outline-style: dotted; }
+.nc-outline-double { outline-style: double; }
+.nc-outline-solid { outline-style: solid; }
+
+/* Outline Color */
+.nc-outline-current { outline-color: currentColor; }
+.nc-outline-transparent { outline-color: transparent; }
+.nc-outline-primary { outline-color: var(--nc-primary-500); }
+.nc-outline-error { outline-color: var(--nc-error-500); }

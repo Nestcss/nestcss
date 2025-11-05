@@ -1,0 +1,35 @@
+/* =======================================================
+   NESTCSS - BACKGROUND IMAGE UTILITIES
+   ======================================================= */
+
+/* Background Image */
+.nc-bg-none { background-image: none !important; }
+
+/* Background Size */
+.nc-bg-auto { background-size: auto !important; }
+.nc-bg-cover { background-size: cover !important; }
+.nc-bg-contain { background-size: contain !important; }
+
+/* Background Repeat */
+.nc-bg-repeat { background-repeat: repeat !important; }
+.nc-bg-no-repeat { background-repeat: no-repeat !important; }
+.nc-bg-repeat-x { background-repeat: repeat-x !important; }
+.nc-bg-repeat-y { background-repeat: repeat-y !important; }
+.nc-bg-repeat-round { background-repeat: round !important; }
+.nc-bg-repeat-space { background-repeat: space !important; }
+
+/* Background Attachment */
+.nc-bg-fixed { background-attachment: fixed !important; }
+.nc-bg-local { background-attachment: local !important; }
+.nc-bg-scroll { background-attachment: scroll !important; }
+
+/* Background Clip */
+.nc-bg-clip-border { background-clip: border-box !important; }
+.nc-bg-clip-padding { background-clip: padding-box !important; }
+.nc-bg-clip-content { background-clip: content-box !important; }
+.nc-bg-clip-text { background-clip: text !important; }
+
+/* Background Origin */
+.nc-bg-origin-border { background-origin: border-box !important; }
+.nc-bg-origin-padding { background-origin: padding-box !important; }
+.nc-bg-origin-content { background-origin: content-box !important; }

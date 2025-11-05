@@ -1,0 +1,14 @@
+/* =======================================================
+   NESTCSS - FLOATS UTILITIES
+   ======================================================= */
+
+/* Floats */
+.nc-float-right { float: right !important; }
+.nc-float-left { float: left !important; }
+.nc-float-none { float: none !important; }
+
+/* Clear */
+.nc-clear-left { clear: left !important; }
+.nc-clear-right { clear: right !important; }
+.nc-clear-both { clear: both !important; }
+.nc-clear-none { clear: none !important; }

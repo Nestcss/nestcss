@@ -1,0 +1,73 @@
+/* =======================================================
+   NESTCSS - FONT UTILITIES
+   ======================================================= */
+
+/* Font Family */
+.nc-font-sans { font-family: var(--nc-font-sans) !important; }
+.nc-font-serif { font-family: var(--nc-font-serif) !important; }
+.nc-font-mono { font-family: var(--nc-font-mono) !important; }
+
+/* Font Size */
+.nc-text-xs { font-size: var(--nc-text-xs) !important; line-height: var(--nc-leading-4) !important; }
+.nc-text-sm { font-size: var(--nc-text-sm) !important; line-height: var(--nc-leading-5) !important; }
+.nc-text-base { font-size: var(--nc-text-base) !important; line-height: var(--nc-leading-6) !important; }
+.nc-text-lg { font-size: var(--nc-text-lg) !important; line-height: var(--nc-leading-7) !important; }
+.nc-text-xl { font-size: var(--nc-text-xl) !important; line-height: var(--nc-leading-7) !important; }
+.nc-text-2xl { font-size: var(--nc-text-2xl) !important; line-height: var(--nc-leading-8) !important; }
+.nc-text-3xl { font-size: var(--nc-text-3xl) !important; line-height: var(--nc-leading-9) !important; }
+.nc-text-4xl { font-size: var(--nc-text-4xl) !important; line-height: var(--nc-leading-10) !important; }
+.nc-text-5xl { font-size: var(--nc-text-5xl) !important; line-height: var(--nc-leading-none) !important; }
+.nc-text-6xl { font-size: var(--nc-text-6xl) !important; line-height: var(--nc-leading-none) !important; }
+.nc-text-7xl { font-size: var(--nc-text-7xl) !important; line-height: var(--nc-leading-none) !important; }
+.nc-text-8xl { font-size: var(--nc-text-8xl) !important; line-height: var(--nc-leading-none) !important; }
+.nc-text-9xl { font-size: var(--nc-text-9xl) !important; line-height: var(--nc-leading-none) !important; }
+
+/* Font Weight */
+.nc-font-thin { font-weight: var(--nc-font-thin) !important; }
+.nc-font-extralight { font-weight: var(--nc-font-extralight) !important; }
+.nc-font-light { font-weight: var(--nc-font-light) !important; }
+.nc-font-normal { font-weight: var(--nc-font-normal) !important; }
+.nc-font-medium { font-weight: var(--nc-font-medium) !important; }
+.nc-font-semibold { font-weight: var(--nc-font-semibold) !important; }
+.nc-font-bold { font-weight: var(--nc-font-bold) !important; }
+.nc-font-extrabold { font-weight: var(--nc-font-extrabold) !important; }
+.nc-font-black { font-weight: var(--nc-font-black) !important; }
+
+/* Font Style */
+.nc-italic { font-style: italic !important; }
+.nc-not-italic { font-style: normal !important; }
+
+/* Font Variant Numeric */
+.nc-normal-nums { font-variant-numeric: normal !important; }
+.nc-ordinal { font-variant-numeric: ordinal !important; }
+.nc-slashed-zero { font-variant-numeric: slashed-zero !important; }
+.nc-lining-nums { font-variant-numeric: lining-nums !important; }
+.nc-oldstyle-nums { font-variant-numeric: oldstyle-nums !important; }
+.nc-proportional-nums { font-variant-numeric: proportional-nums !important; }
+.nc-tabular-nums { font-variant-numeric: tabular-nums !important; }
+.nc-diagonal-fractions { font-variant-numeric: diagonal-fractions !important; }
+.nc-stacked-fractions { font-variant-numeric: stacked-fractions !important; }
+
+/* Letter Spacing */
+.nc-tracking-tighter { letter-spacing: var(--nc-tracking-tighter) !important; }
+.nc-tracking-tight { letter-spacing: var(--nc-tracking-tight) !important; }
+.nc-tracking-normal { letter-spacing: var(--nc-tracking-normal) !important; }
+.nc-tracking-wide { letter-spacing: var(--nc-tracking-wide) !important; }
+.nc-tracking-wider { letter-spacing: var(--nc-tracking-wider) !important; }
+.nc-tracking-widest { letter-spacing: var(--nc-tracking-widest) !important; }
+
+/* Line Height */
+.nc-leading-3 { line-height: var(--nc-leading-3) !important; }
+.nc-leading-4 { line-height: var(--nc-leading-4) !important; }
+.nc-leading-5 { line-height: var(--nc-leading-5) !important; }
+.nc-leading-6 { line-height: var(--nc-leading-6) !important; }
+.nc-leading-7 { line-height: var(--nc-leading-7) !important; }
+.nc-leading-8 { line-height: var(--nc-leading-8) !important; }
+.nc-leading-9 { line-height: var(--nc-leading-9) !important; }
+.nc-leading-10 { line-height: var(--nc-leading-10) !important; }
+.nc-leading-none { line-height: var(--nc-leading-none) !important; }
+.nc-leading-tight { line-height: var(--nc-leading-tight) !important; }
+.nc-leading-snug { line-height: var(--nc-leading-snug) !important; }
+.nc-leading-normal { line-height: var(--nc-leading-normal) !important; }
+.nc-leading-relaxed { line-height: var(--nc-leading-relaxed) !important; }
+.nc-leading-loose { line-height: var(--nc-leading-loose) !important; }

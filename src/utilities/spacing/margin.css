@@ -1,0 +1,103 @@
+/* =======================================================
+   NESTCSS - MARGIN UTILITIES
+   ======================================================= */
+
+/* Margin - All sides */
+.nc-m-0 { margin: var(--nc-space-0) !important; }
+.nc-m-1 { margin: var(--nc-space-1) !important; }
+.nc-m-2 { margin: var(--nc-space-2) !important; }
+.nc-m-3 { margin: var(--nc-space-3) !important; }
+.nc-m-4 { margin: var(--nc-space-4) !important; }
+.nc-m-5 { margin: var(--nc-space-5) !important; }
+.nc-m-6 { margin: var(--nc-space-6) !important; }
+.nc-m-8 { margin: var(--nc-space-8) !important; }
+.nc-m-10 { margin: var(--nc-space-10) !important; }
+.nc-m-12 { margin: var(--nc-space-12) !important; }
+.nc-m-16 { margin: var(--nc-space-16) !important; }
+.nc-m-20 { margin: var(--nc-space-20) !important; }
+.nc-m-24 { margin: var(--nc-space-24) !important; }
+.nc-m-32 { margin: var(--nc-space-32) !important; }
+
+/* Margin - Horizontal (left + right) */
+.nc-mx-0 { margin-left: var(--nc-space-0) !important; margin-right: var(--nc-space-0) !important; }
+.nc-mx-1 { margin-left: var(--nc-space-1) !important; margin-right: var(--nc-space-1) !important; }
+.nc-mx-2 { margin-left: var(--nc-space-2) !important; margin-right: var(--nc-space-2) !important; }
+.nc-mx-3 { margin-left: var(--nc-space-3) !important; margin-right: var(--nc-space-3) !important; }
+.nc-mx-4 { margin-left: var(--nc-space-4) !important; margin-right: var(--nc-space-4) !important; }
+.nc-mx-5 { margin-left: var(--nc-space-5) !important; margin-right: var(--nc-space-5) !important; }
+.nc-mx-6 { margin-left: var(--nc-space-6) !important; margin-right: var(--nc-space-6) !important; }
+.nc-mx-8 { margin-left: var(--nc-space-8) !important; margin-right: var(--nc-space-8) !important; }
+.nc-mx-10 { margin-left: var(--nc-space-10) !important; margin-right: var(--nc-space-10) !important; }
+.nc-mx-12 { margin-left: var(--nc-space-12) !important; margin-right: var(--nc-space-12) !important; }
+.nc-mx-16 { margin-left: var(--nc-space-16) !important; margin-right: var(--nc-space-16) !important; }
+.nc-mx-auto { margin-left: auto !important; margin-right: auto !important; }
+
+/* Margin - Vertical (top + bottom) */
+.nc-my-0 { margin-top: var(--nc-space-0) !important; margin-bottom: var(--nc-space-0) !important; }
+.nc-my-1 { margin-top: var(--nc-space-1) !important; margin-bottom: var(--nc-space-1) !important; }
+.nc-my-2 { margin-top: var(--nc-space-2) !important; margin-bottom: var(--nc-space-2) !important; }
+.nc-my-3 { margin-top: var(--nc-space-3) !important; margin-bottom: var(--nc-space-3) !important; }
+.nc-my-4 { margin-top: var(--nc-space-4) !important; margin-bottom: var(--nc-space-4) !important; }
+.nc-my-5 { margin-top: var(--nc-space-5) !important; margin-bottom: var(--nc-space-5) !important; }
+.nc-my-6 { margin-top: var(--nc-space-6) !important; margin-bottom: var(--nc-space-6) !important; }
+.nc-my-8 { margin-top: var(--nc-space-8) !important; margin-bottom: var(--nc-space-8) !important; }
+.nc-my-10 { margin-top: var(--nc-space-10) !important; margin-bottom: var(--nc-space-10) !important; }
+.nc-my-12 { margin-top: var(--nc-space-12) !important; margin-bottom: var(--nc-space-12) !important; }
+.nc-my-16 { margin-top: var(--nc-space-16) !important; margin-bottom: var(--nc-space-16) !important; }
+.nc-my-auto { margin-top: auto !important; margin-bottom: auto !important; }
+
+/* Margin - Top */
+.nc-mt-0 { margin-top: var(--nc-space-0) !important; }
+.nc-mt-1 { margin-top: var(--nc-space-1) !important; }
+.nc-mt-2 { margin-top: var(--nc-space-2) !important; }
+.nc-mt-3 { margin-top: var(--nc-space-3) !important; }
+.nc-mt-4 { margin-top: var(--nc-space-4) !important; }
+.nc-mt-5 { margin-top: var(--nc-space-5) !important; }
+.nc-mt-6 { margin-top: var(--nc-space-6) !important; }
+.nc-mt-8 { margin-top: var(--nc-space-8) !important; }
+.nc-mt-10 { margin-top: var(--nc-space-10) !important; }
+.nc-mt-12 { margin-top: var(--nc-space-12) !important; }
+.nc-mt-16 { margin-top: var(--nc-space-16) !important; }
+.nc-mt-auto { margin-top: auto !important; }
+
+/* Margin - Right */
+.nc-mr-0 { margin-right: var(--nc-space-0) !important; }
+.nc-mr-1 { margin-right: var(--nc-space-1) !important; }
+.nc-mr-2 { margin-right: var(--nc-space-2) !important; }
+.nc-mr-3 { margin-right: var(--nc-space-3) !important; }
+.nc-mr-4 { margin-right: var(--nc-space-4) !important; }
+.nc-mr-5 { margin-right: var(--nc-space-5) !important; }
+.nc-mr-6 { margin-right: var(--nc-space-6) !important; }
+.nc-mr-8 { margin-right: var(--nc-space-8) !important; }
+.nc-mr-10 { margin-right: var(--nc-space-10) !important; }
+.nc-mr-12 { margin-right: var(--nc-space-12) !important; }
+.nc-mr-16 { margin-right: var(--nc-space-16) !important; }
+.nc-mr-auto { margin-right: auto !important; }
+
+/* Margin - Bottom */
+.nc-mb-0 { margin-bottom: var(--nc-space-0) !important; }
+.nc-mb-1 { margin-bottom: var(--nc-space-1) !important; }
+.nc-mb-2 { margin-bottom: var(--nc-space-2) !important; }
+.nc-mb-3 { margin-bottom: var(--nc-space-3) !important; }
+.nc-mb-4 { margin-bottom: var(--nc-space-4) !important; }
+.nc-mb-5 { margin-bottom: var(--nc-space-5) !important; }
+.nc-mb-6 { margin-bottom: var(--nc-space-6) !important; }
+.nc-mb-8 { margin-bottom: var(--nc-space-8) !important; }
+.nc-mb-10 { margin-bottom: var(--nc-space-10) !important; }
+.nc-mb-12 { margin-bottom: var(--nc-space-12) !important; }
+.nc-mb-16 { margin-bottom: var(--nc-space-16) !important; }
+.nc-mb-auto { margin-bottom: auto !important; }
+
+/* Margin - Left */
+.nc-ml-0 { margin-left: var(--nc-space-0) !important; }
+.nc-ml-1 { margin-left: var(--nc-space-1) !important; }
+.nc-ml-2 { margin-left: var(--nc-space-2) !important; }
+.nc-ml-3 { margin-left: var(--nc-space-3) !important; }
+.nc-ml-4 { margin-left: var(--nc-space-4) !important; }
+.nc-ml-5 { margin-left: var(--nc-space-5) !important; }
+.nc-ml-6 { margin-left: var(--nc-space-6) !important; }
+.nc-ml-8 { margin-left: var(--nc-space-8) !important; }
+.nc-ml-10 { margin-left: var(--nc-space-10) !important; }
+.nc-ml-12 { margin-left: var(--nc-space-12) !important; }
+.nc-ml-16 { margin-left: var(--nc-space-16) !important; }
+.nc-ml-auto { margin-left: auto !important; }

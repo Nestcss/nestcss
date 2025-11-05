@@ -1,0 +1,53 @@
+/* =======================================================
+   CURSOR UTILITIES
+   ======================================================= */
+
+/* Basic Cursors */
+.nc-cursor-auto { cursor: auto; }
+.nc-cursor-default { cursor: default; }
+.nc-cursor-pointer { cursor: pointer; }
+.nc-cursor-wait { cursor: wait; }
+.nc-cursor-text { cursor: text; }
+.nc-cursor-move { cursor: move; }
+.nc-cursor-help { cursor: help; }
+.nc-cursor-not-allowed { cursor: not-allowed; }
+.nc-cursor-none { cursor: none; }
+
+/* Selection & Context Cursors */
+.nc-cursor-context-menu { cursor: context-menu; }
+.nc-cursor-progress { cursor: progress; }
+.nc-cursor-cell { cursor: cell; }
+.nc-cursor-crosshair { cursor: crosshair; }
+.nc-cursor-vertical-text { cursor: vertical-text; }
+
+/* Drag & Drop Cursors */
+.nc-cursor-alias { cursor: alias; }
+.nc-cursor-copy { cursor: copy; }
+.nc-cursor-no-drop { cursor: no-drop; }
+.nc-cursor-grab { cursor: grab; }
+.nc-cursor-grabbing { cursor: grabbing; }
+
+/* Scroll & Resize Cursors */
+.nc-cursor-all-scroll { cursor: all-scroll; }
+.nc-cursor-col-resize { cursor: col-resize; }
+.nc-cursor-row-resize { cursor: row-resize; }
+
+/* Directional Resize Cursors */
+.nc-cursor-n-resize { cursor: n-resize; }
+.nc-cursor-e-resize { cursor: e-resize; }
+.nc-cursor-s-resize { cursor: s-resize; }
+.nc-cursor-w-resize { cursor: w-resize; }
+.nc-cursor-ne-resize { cursor: ne-resize; }
+.nc-cursor-nw-resize { cursor: nw-resize; }
+.nc-cursor-se-resize { cursor: se-resize; }
+.nc-cursor-sw-resize { cursor: sw-resize; }
+
+/* Bidirectional Resize Cursors */
+.nc-cursor-ew-resize { cursor: ew-resize; }
+.nc-cursor-ns-resize { cursor: ns-resize; }
+.nc-cursor-nesw-resize { cursor: nesw-resize; }
+.nc-cursor-nwse-resize { cursor: nwse-resize; }
+
+/* Zoom Cursors */
+.nc-cursor-zoom-in { cursor: zoom-in; }
+.nc-cursor-zoom-out { cursor: zoom-out; }

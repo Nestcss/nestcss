@@ -1,0 +1,69 @@
+/* =======================================================
+   NESTCSS - FILTER UTILITIES
+   ======================================================= */
+
+/* Blur */
+.nc-blur-0 { filter: blur(0) !important; }
+.nc-blur-sm { filter: blur(4px) !important; }
+.nc-blur { filter: blur(8px) !important; }
+.nc-blur-md { filter: blur(12px) !important; }
+.nc-blur-lg { filter: blur(16px) !important; }
+.nc-blur-xl { filter: blur(24px) !important; }
+.nc-blur-2xl { filter: blur(40px) !important; }
+.nc-blur-3xl { filter: blur(64px) !important; }
+
+/* Brightness */
+.nc-brightness-0 { filter: brightness(0) !important; }
+.nc-brightness-50 { filter: brightness(0.5) !important; }
+.nc-brightness-75 { filter: brightness(0.75) !important; }
+.nc-brightness-90 { filter: brightness(0.9) !important; }
+.nc-brightness-95 { filter: brightness(0.95) !important; }
+.nc-brightness-100 { filter: brightness(1) !important; }
+.nc-brightness-105 { filter: brightness(1.05) !important; }
+.nc-brightness-110 { filter: brightness(1.1) !important; }
+.nc-brightness-125 { filter: brightness(1.25) !important; }
+.nc-brightness-150 { filter: brightness(1.5) !important; }
+
+/* Contrast */
+.nc-contrast-0 { filter: contrast(0) !important; }
+.nc-contrast-50 { filter: contrast(0.5) !important; }
+.nc-contrast-75 { filter: contrast(0.75) !important; }
+.nc-contrast-100 { filter: contrast(1) !important; }
+.nc-contrast-125 { filter: contrast(1.25) !important; }
+.nc-contrast-150 { filter: contrast(1.5) !important; }
+
+/* Grayscale */
+.nc-grayscale-0 { filter: grayscale(0) !important; }
+.nc-grayscale { filter: grayscale(100%) !important; }
+
+/* Hue Rotate */
+.nc-hue-rotate-0 { filter: hue-rotate(0deg) !important; }
+.nc-hue-rotate-15 { filter: hue-rotate(15deg) !important; }
+.nc-hue-rotate-30 { filter: hue-rotate(30deg) !important; }
+.nc-hue-rotate-60 { filter: hue-rotate(60deg) !important; }
+.nc-hue-rotate-90 { filter: hue-rotate(90deg) !important; }
+.nc-hue-rotate-180 { filter: hue-rotate(180deg) !important; }
+
+/* Invert */
+.nc-invert-0 { filter: invert(0) !important; }
+.nc-invert { filter: invert(100%) !important; }
+
+/* Saturate */
+.nc-saturate-0 { filter: saturate(0) !important; }
+.nc-saturate-50 { filter: saturate(0.5) !important; }
+.nc-saturate-100 { filter: saturate(1) !important; }
+.nc-saturate-150 { filter: saturate(1.5) !important; }
+.nc-saturate-200 { filter: saturate(2) !important; }
+
+/* Sepia */
+.nc-sepia-0 { filter: sepia(0) !important; }
+.nc-sepia { filter: sepia(100%) !important; }
+
+/* Drop Shadow */
+.nc-drop-shadow-sm { filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05)) !important; }
+.nc-drop-shadow { filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06)) !important; }
+.nc-drop-shadow-md { filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06)) !important; }
+.nc-drop-shadow-lg { filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)) !important; }
+.nc-drop-shadow-xl { filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08)) !important; }
+.nc-drop-shadow-2xl { filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15)) !important; }
+.nc-drop-shadow-none { filter: drop-shadow(0 0 #0000) !important; }

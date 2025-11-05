@@ -1,0 +1,14 @@
+/* =======================================================
+   NESTCSS - OBJECT POSITION UTILITIES
+   ======================================================= */
+
+/* Object Position */
+.nc-object-center { object-position: center !important; }
+.nc-object-top { object-position: top !important; }
+.nc-object-bottom { object-position: bottom !important; }
+.nc-object-left { object-position: left !important; }
+.nc-object-right { object-position: right !important; }
+.nc-object-top-left { object-position: top left !important; }
+.nc-object-top-right { object-position: top right !important; }
+.nc-object-bottom-left { object-position: bottom left !important; }
+.nc-object-bottom-right { object-position: bottom right !important; }

@@ -1,0 +1,283 @@
+/* =======================================================
+   CARD COMPONENTS - CLEAN & MODERATE
+   ======================================================= */
+
+/* ========== BASE CARD ========== */
+.nc-card {
+    background: var(--nc-white);
+    border: 1px solid var(--nc-slate-200);
+    border-radius: var(--nc-radius-lg);
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.nc-card:hover {
+    border-color: var(--nc-slate-300);
+    box-shadow: var(--nc-shadow-md);
+}
+
+/* ========== CARD STRUCTURE ========== */
+
+/* Card Header */
+.nc-card-header {
+    padding: var(--nc-space-6);
+    border-bottom: 1px solid var(--nc-slate-200);
+    background: var(--nc-slate-50);
+}
+
+.nc-card-header:only-child {
+    border-bottom: none;
+}
+
+/* Card Body */
+.nc-card-body {
+    padding: var(--nc-space-6);
+}
+
+/* Card with only body (no header/footer) */
+.nc-card-body:only-child {
+    padding: var(--nc-space-6);
+}
+
+/* Card Footer */
+.nc-card-footer {
+    padding: var(--nc-space-6);
+    border-top: 1px solid var(--nc-slate-200);
+    background: var(--nc-slate-50);
+}
+
+/* ========== CARD CONTENT ELEMENTS ========== */
+
+/* Card Title */
+.nc-card-title {
+    font-size: var(--nc-text-xl);
+    font-weight: var(--nc-font-semibold);
+    color: var(--nc-slate-900);
+    margin: 0 0 var(--nc-space-2) 0;
+}
+
+/* Card Subtitle */
+.nc-card-subtitle {
+    font-size: var(--nc-text-sm);
+    color: var(--nc-slate-600);
+    margin: 0 0 var(--nc-space-4) 0;
+    font-weight: var(--nc-font-normal);
+}
+
+/* Card Text */
+.nc-card-text {
+    color: var(--nc-slate-700);
+    line-height: var(--nc-leading-relaxed);
+    margin: 0 0 var(--nc-space-4) 0;
+}
+
+.nc-card-text:last-child {
+    margin-bottom: 0;
+}
+
+/* ========== CARD WITH IMAGE ========== */
+
+.nc-card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nc-card-img-top {
+    border-top-left-radius: var(--nc-radius-lg);
+    border-top-right-radius: var(--nc-radius-lg);
+}
+
+.nc-card-img-bottom {
+    border-bottom-left-radius: var(--nc-radius-lg);
+    border-bottom-right-radius: var(--nc-radius-lg);
+}
+
+/* Card with image and content */
+.nc-card-with-img .nc-card-body {
+    padding-top: var(--nc-space-4);
+}
+
+/* ========== CARD VARIANTS ========== */
+
+/* Bordered Card */
+.nc-card-bordered {
+    border: 2px solid var(--nc-slate-300);
+}
+
+.nc-card-bordered:hover {
+    border-color: var(--nc-slate-400);
+}
+
+/* Shadow Card */
+.nc-card-shadow {
+    box-shadow: var(--nc-shadow-lg);
+    border: none;
+}
+
+.nc-card-shadow:hover {
+    box-shadow: var(--nc-shadow-xl);
+}
+
+/* Flat Card */
+.nc-card-flat {
+    border: 1px solid var(--nc-slate-200);
+    box-shadow: none;
+}
+
+.nc-card-flat:hover {
+    box-shadow: none;
+    border-color: var(--nc-slate-300);
+}
+
+/* ========== CARD SIZES ========== */
+
+/* Small Card */
+.nc-card-sm .nc-card-header,
+.nc-card-sm .nc-card-body,
+.nc-card-sm .nc-card-footer {
+    padding: var(--nc-space-4);
+}
+
+.nc-card-sm .nc-card-title {
+    font-size: var(--nc-text-lg);
+}
+
+/* Large Card */
+.nc-card-lg .nc-card-header,
+.nc-card-lg .nc-card-body,
+.nc-card-lg .nc-card-footer {
+    padding: var(--nc-space-8);
+}
+
+.nc-card-lg .nc-card-title {
+    font-size: var(--nc-text-2xl);
+}
+
+/* ========== CARD LAYOUTS ========== */
+
+/* Horizontal Card */
+.nc-card-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.nc-card-horizontal .nc-card-img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--nc-radius-lg) 0 0 var(--nc-radius-lg);
+}
+
+.nc-card-horizontal .nc-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Card Grid Container */
+.nc-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--nc-space-6);
+}
+
+/* ========== CARD TYPES ========== */
+
+/* Feature Card */
+.nc-card-feature {
+    text-align: center;
+    border: none;
+    box-shadow: var(--nc-shadow-lg);
+}
+
+.nc-card-feature .nc-card-body {
+    padding: var(--nc-space-8);
+}
+
+.nc-card-feature .nc-card-title {
+    margin-top: var(--nc-space-4);
+}
+
+/* Stats Card */
+.nc-card-stats {
+    text-align: center;
+    border: none;
+    background: linear-gradient(135deg, var(--nc-primary-500), var(--nc-primary-600));
+    color: var(--nc-white);
+}
+
+.nc-card-stats .nc-card-title {
+    font-size: var(--nc-text-3xl);
+    font-weight: var(--nc-font-bold);
+    color: var(--nc-white);
+    margin-bottom: var(--nc-space-2);
+}
+
+.nc-card-stats .nc-card-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--nc-text-sm);
+}
+
+/* Profile Card */
+.nc-card-profile {
+    text-align: center;
+    border: none;
+    box-shadow: var(--nc-shadow-lg);
+}
+
+.nc-card-profile .nc-card-body {
+    padding: var(--nc-space-8) var(--nc-space-6);
+}
+
+.nc-card-profile .nc-card-img {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--nc-radius-full);
+    margin: 0 auto var(--nc-space-4) auto;
+    border: 4px solid var(--nc-white);
+    box-shadow: var(--nc-shadow-md);
+}
+
+/* Product Card */
+.nc-card-product {
+    border: none;
+    box-shadow: var(--nc-shadow-md);
+}
+
+.nc-card-product .nc-card-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.nc-card-product .nc-card-price {
+    font-size: var(--nc-text-xl);
+    font-weight: var(--nc-font-bold);
+    color: var(--nc-primary-500);
+    margin: var(--nc-space-2) 0;
+}
+
+/* ========== CARD STATES ========== */
+
+/* Interactive Card */
+.nc-card-interactive {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nc-card-interactive:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--nc-shadow-xl);
+}
+
+/* Disabled Card */
+.nc-card-disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.nc-card-disabled:hover {
+    transform: none;
+    box-shadow: var(--nc-shadow-sm);
+}

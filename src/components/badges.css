@@ -1,0 +1,497 @@
+/* =======================================================
+   BADGE COMPONENTS
+   ======================================================= */
+
+/* ========== BASE BADGE ========== */
+
+.nc-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--nc-space-1) var(--nc-space-2);
+    font-size: var(--nc-text-xs);
+    font-weight: var(--nc-font-medium);
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: var(--nc-radius-full);
+    transition: all 0.2s ease;
+}
+
+/* ========== BADGE VARIANTS ========== */
+
+/* Primary Badge */
+.nc-badge-primary {
+    background-color: var(--nc-primary-500);
+    color: var(--nc-white);
+}
+
+/* Secondary Badge */
+.nc-badge-secondary {
+    background-color: var(--nc-secondary-500);
+    color: var(--nc-white);
+}
+
+/* Success Badge */
+.nc-badge-success {
+    background-color: var(--nc-success-500);
+    color: var(--nc-white);
+}
+
+/* Warning Badge */
+.nc-badge-warning {
+    background-color: var(--nc-warning-500);
+    color: var(--nc-white);
+}
+
+/* Error Badge */
+.nc-badge-error {
+    background-color: var(--nc-error-500);
+    color: var(--nc-white);
+}
+
+/* Info Badge */
+.nc-badge-info {
+    background-color: var(--nc-slate-500);
+    color: var(--nc-white);
+}
+
+/* Outline Badge */
+.nc-badge-outline {
+    background-color: transparent;
+    border: 1px solid currentColor;
+}
+
+.nc-badge-outline.nc-badge-primary {
+    color: var(--nc-primary-500);
+}
+
+.nc-badge-outline.nc-badge-success {
+    color: var(--nc-success-500);
+}
+
+.nc-badge-outline.nc-badge-warning {
+    color: var(--nc-warning-500);
+}
+
+.nc-badge-outline.nc-badge-error {
+    color: var(--nc-error-500);
+}
+
+.nc-badge-outline.nc-badge-info {
+    color: var(--nc-slate-500);
+}
+
+/* Subtle Badge */
+.nc-badge-subtle {
+    background-color: var(--nc-slate-100);
+    color: var(--nc-slate-700);
+}
+
+.nc-badge-subtle.nc-badge-primary {
+    background-color: var(--nc-primary-100);
+    color: var(--nc-primary-700);
+}
+
+.nc-badge-subtle.nc-badge-success {
+    background-color: var(--nc-success-100);
+    color: var(--nc-success-700);
+}
+
+.nc-badge-subtle.nc-badge-warning {
+    background-color: var(--nc-warning-100);
+    color: var(--nc-warning-700);
+}
+
+.nc-badge-subtle.nc-badge-error {
+    background-color: var(--nc-error-100);
+    color: var(--nc-error-700);
+}
+
+/* ========== BADGE SIZES ========== */
+
+/* Extra Small Badge */
+.nc-badge-xs {
+    padding: 2px var(--nc-space-1);
+    font-size: 10px;
+    line-height: 1;
+}
+
+/* Small Badge */
+.nc-badge-sm {
+    padding: var(--nc-space-1) var(--nc-space-2);
+    font-size: var(--nc-text-xs);
+}
+
+/* Large Badge */
+.nc-badge-lg {
+    padding: var(--nc-space-2) var(--nc-space-3);
+    font-size: var(--nc-text-sm);
+}
+
+/* Extra Large Badge */
+.nc-badge-xl {
+    padding: var(--nc-space-2) var(--nc-space-4);
+    font-size: var(--nc-text-base);
+    font-weight: var(--nc-font-semibold);
+}
+
+/* ========== BADGE WITH ICONS ========== */
+
+.nc-badge-has-icon {
+    gap: var(--nc-space-1);
+    padding-left: var(--nc-space-2);
+}
+
+.nc-badge-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+    font-size: 10px;
+}
+
+.nc-badge-lg .nc-badge-icon,
+.nc-badge-xl .nc-badge-icon {
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+}
+
+/* ========== BADGE TYPES ========== */
+
+/* Status Badge (Dot) */
+.nc-badge-status {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border-radius: var(--nc-radius-full);
+    border: 2px solid var(--nc-white);
+    box-shadow: var(--nc-shadow-sm);
+}
+
+.nc-badge-status.nc-badge-lg {
+    width: 10px;
+    height: 10px;
+}
+
+.nc-badge-status.nc-badge-xl {
+    width: 12px;
+    height: 12px;
+}
+
+/* Count Badge */
+.nc-badge-count {
+    min-width: 18px;
+    height: 18px;
+    padding: 0 var(--nc-space-1);
+    border-radius: var(--nc-radius-full);
+    font-size: 10px;
+    font-weight: var(--nc-font-bold);
+}
+
+.nc-badge-count.nc-badge-lg {
+    min-width: 22px;
+    height: 22px;
+    font-size: var(--nc-text-xs);
+}
+
+.nc-badge-count.nc-badge-xl {
+    min-width: 26px;
+    height: 26px;
+    font-size: var(--nc-text-sm);
+}
+
+/* Pill Badge */
+.nc-badge-pill {
+    border-radius: var(--nc-radius-full);
+}
+
+/* Square Badge */
+.nc-badge-square {
+    border-radius: var(--nc-radius);
+}
+
+/* ========== BADGE POSITIONS ========== */
+
+/* Badge on elements */
+.nc-badge-container {
+    position: relative;
+    display: inline-block;
+}
+
+.nc-badge-top-right {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    transform: scale(1);
+    z-index: var(--nc-z-10);
+}
+
+.nc-badge-top-left {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    transform: scale(1);
+    z-index: var(--nc-z-10);
+}
+
+.nc-badge-bottom-right {
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    transform: scale(1);
+    z-index: var(--nc-z-10);
+}
+
+.nc-badge-bottom-left {
+    position: absolute;
+    bottom: -6px;
+    left: -6px;
+    transform: scale(1);
+    z-index: var(--nc-z-10);
+}
+
+/* Badge on Avatars */
+.nc-avatar .nc-badge-status {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    border: 2px solid var(--nc-white);
+}
+
+.nc-avatar.nc-avatar-sm .nc-badge-status {
+    bottom: 1px;
+    right: 1px;
+    width: 6px;
+    height: 6px;
+}
+
+.nc-avatar.nc-avatar-lg .nc-badge-status {
+    bottom: 4px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+}
+
+/* ========== BADGE ANIMATIONS ========== */
+
+/* Pulse Badge */
+.nc-badge-pulse {
+    animation: nc-badge-pulse 2s infinite;
+}
+
+@keyframes nc-badge-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(59, 130, 246, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    }
+}
+
+.nc-badge-pulse.nc-badge-success {
+    animation-name: nc-badge-pulse-success;
+}
+
+@keyframes nc-badge-pulse-success {
+    0% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    }
+}
+
+.nc-badge-pulse.nc-badge-error {
+    animation-name: nc-badge-pulse-error;
+}
+
+@keyframes nc-badge-pulse-error {
+    0% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(239, 68, 68, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    }
+}
+
+/* Bounce Badge */
+.nc-badge-bounce {
+    animation: nc-badge-bounce 1s infinite;
+}
+
+@keyframes nc-badge-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+/* ========== BADGE GROUPS ========== */
+
+.nc-badge-group {
+    display: flex;
+    gap: var(--nc-space-1);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nc-badge-group-stacked {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* ========== INTERACTIVE BADGES ========== */
+
+.nc-badge-interactive {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nc-badge-interactive:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--nc-shadow-sm);
+}
+
+.nc-badge-interactive:active {
+    transform: translateY(0);
+}
+
+/* Removable Badge */
+.nc-badge-removable {
+    padding-right: var(--nc-space-2);
+    cursor: pointer;
+}
+
+.nc-badge-remove {
+    margin-left: var(--nc-space-1);
+    background: none;
+    border: none;
+    color: inherit;
+    opacity: 0.7;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--nc-radius-full);
+    transition: all 0.2s ease;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.nc-badge-remove:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.nc-badge-outline .nc-badge-remove:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* ========== BADGE IN TEXT ========== */
+
+/* Badge in headings */
+h1 .nc-badge,
+h2 .nc-badge,
+h3 .nc-badge,
+h4 .nc-badge,
+h5 .nc-badge,
+h6 .nc-badge {
+    vertical-align: middle;
+    margin-left: var(--nc-space-2);
+}
+
+/* Badge in buttons */
+.nc-btn .nc-badge {
+    margin-left: var(--nc-space-2);
+    font-size: 10px;
+}
+
+.nc-btn-sm .nc-badge {
+    font-size: 9px;
+    margin-left: var(--nc-space-1);
+}
+
+.nc-btn-lg .nc-badge {
+    font-size: var(--nc-text-xs);
+    margin-left: var(--nc-space-2);
+}
+
+/* ========== SPECIAL BADGES ========== */
+
+/* New Badge */
+.nc-badge-new {
+    background: linear-gradient(135deg, var(--nc-primary-500), var(--nc-primary-600));
+    color: var(--nc-white);
+    font-weight: var(--nc-font-bold);
+    animation: nc-badge-new-pulse 2s ease-in-out infinite;
+}
+
+@keyframes nc-badge-new-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Featured Badge */
+.nc-badge-featured {
+    background: linear-gradient(135deg, var(--nc-warning-400), var(--nc-warning-500));
+    color: var(--nc-white);
+    font-weight: var(--nc-font-bold);
+    box-shadow: var(--nc-shadow-md);
+}
+
+/* Premium Badge */
+.nc-badge-premium {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: var(--nc-slate-900);
+    font-weight: var(--nc-font-bold);
+    box-shadow: var(--nc-shadow-md);
+}
+
+/* ========== BADGE STATES ========== */
+
+.nc-badge-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.nc-badge-loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.nc-badge-loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: nc-badge-loading 1.5s infinite;
+}
+
+@keyframes nc-badge-loading {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}

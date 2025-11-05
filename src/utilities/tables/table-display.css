@@ -1,0 +1,118 @@
+/* =======================================================
+   TABLE DISPLAY UTILITIES
+   ======================================================= */
+
+/* Table display types */
+.nc-table {
+  display: table;
+}
+
+.nc-table-inline {
+  display: inline-table;
+}
+
+.nc-table-row {
+  display: table-row;
+}
+
+.nc-table-cell {
+  display: table-cell;
+}
+
+.nc-table-caption {
+  display: table-caption;
+}
+
+.nc-table-column {
+  display: table-column;
+}
+
+.nc-table-column-group {
+  display: table-column-group;
+}
+
+.nc-table-header-group {
+  display: table-header-group;
+}
+
+.nc-table-row-group {
+  display: table-row-group;
+}
+
+.nc-table-footer-group {
+  display: table-footer-group;
+}
+
+/* Table column width */
+.nc-table-col-auto {
+  width: auto;
+}
+
+.nc-table-col-1 {
+  width: 8.333333%;
+}
+
+.nc-table-col-2 {
+  width: 16.666667%;
+}
+
+.nc-table-col-3 {
+  width: 25%;
+}
+
+.nc-table-col-4 {
+  width: 33.333333%;
+}
+
+.nc-table-col-5 {
+  width: 41.666667%;
+}
+
+.nc-table-col-6 {
+  width: 50%;
+}
+
+.nc-table-col-7 {
+  width: 58.333333%;
+}
+
+.nc-table-col-8 {
+  width: 66.666667%;
+}
+
+.nc-table-col-9 {
+  width: 75%;
+}
+
+.nc-table-col-10 {
+  width: 83.333333%;
+}
+
+.nc-table-col-11 {
+  width: 91.666667%;
+}
+
+.nc-table-col-12 {
+  width: 100%;
+}
+
+/* Table row height */
+.nc-table-row-h-auto {
+  height: auto;
+}
+
+.nc-table-row-h-1 {
+  height: var(--nc-space-1);
+}
+
+.nc-table-row-h-2 {
+  height: var(--nc-space-2);
+}
+
+.nc-table-row-h-4 {
+  height: var(--nc-space-4);
+}
+
+.nc-table-row-h-8 {
+  height: var(--nc-space-8);
+}

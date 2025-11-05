@@ -1,0 +1,103 @@
+/* =======================================================
+   BREAKPOINTS UTILITIES
+   ======================================================= */
+
+/* Container utilities */
+.nc-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nc-container-fluid {
+  width: 100%;
+}
+
+/* Responsive container widths */
+@media (min-width: 640px) {
+  .nc-container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nc-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nc-container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .nc-container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .nc-container {
+    max-width: 1536px;
+  }
+}
+
+/* Responsive hide/show */
+.nc-block { display: block; }
+.nc-inline { display: inline; }
+.nc-inline-block { display: inline-block; }
+.nc-flex { display: flex; }
+.nc-grid { display: grid; }
+.nc-hidden { display: none; }
+
+/* Small screens (sm) */
+@media (min-width: 640px) {
+  .nc-sm-block { display: block; }
+  .nc-sm-inline { display: inline; }
+  .nc-sm-inline-block { display: inline-block; }
+  .nc-sm-flex { display: flex; }
+  .nc-sm-grid { display: grid; }
+  .nc-sm-hidden { display: none; }
+}
+
+/* Medium screens (md) */
+@media (min-width: 768px) {
+  .nc-md-block { display: block; }
+  .nc-md-inline { display: inline; }
+  .nc-md-inline-block { display: inline-block; }
+  .nc-md-flex { display: flex; }
+  .nc-md-grid { display: grid; }
+  .nc-md-hidden { display: none; }
+}
+
+/* Large screens (lg) */
+@media (min-width: 1024px) {
+  .nc-lg-block { display: block; }
+  .nc-lg-inline { display: inline; }
+  .nc-lg-inline-block { display: inline-block; }
+  .nc-lg-flex { display: flex; }
+  .nc-lg-grid { display: grid; }
+  .nc-lg-hidden { display: none; }
+}
+
+/* Extra large screens (xl) */
+@media (min-width: 1280px) {
+  .nc-xl-block { display: block; }
+  .nc-xl-inline { display: inline; }
+  .nc-xl-inline-block { display: inline-block; }
+  .nc-xl-flex { display: flex; }
+  .nc-xl-grid { display: grid; }
+  .nc-xl-hidden { display: none; }
+}
+
+/* 2X large screens (2xl) */
+@media (min-width: 1536px) {
+  .nc-2xl-block { display: block; }
+  .nc-2xl-inline { display: inline; }
+  .nc-2xl-inline-block { display: inline-block; }
+  .nc-2xl-flex { display: flex; }
+  .nc-2xl-grid { display: grid; }
+  .nc-2xl-hidden { display: none; }
+}

@@ -1,0 +1,40 @@
+/* =======================================================
+   NESTCSS - TRANSITION UTILITIES
+   ======================================================= */
+
+/* Transition Property */
+.nc-transition-none { transition-property: none !important; }
+.nc-transition-all { transition-property: all !important; }
+.nc-transition { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important; }
+.nc-transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke !important; }
+.nc-transition-opacity { transition-property: opacity !important; }
+.nc-transition-shadow { transition-property: box-shadow !important; }
+.nc-transition-transform { transition-property: transform !important; }
+
+/* Transition Duration */
+.nc-duration-0 { transition-duration: 0s !important; }
+.nc-duration-75 { transition-duration: 75ms !important; }
+.nc-duration-100 { transition-duration: 100ms !important; }
+.nc-duration-150 { transition-duration: 150ms !important; }
+.nc-duration-200 { transition-duration: 200ms !important; }
+.nc-duration-300 { transition-duration: 300ms !important; }
+.nc-duration-500 { transition-duration: 500ms !important; }
+.nc-duration-700 { transition-duration: 700ms !important; }
+.nc-duration-1000 { transition-duration: 1000ms !important; }
+
+/* Transition Timing Function */
+.nc-ease-linear { transition-timing-function: linear !important; }
+.nc-ease-in { transition-timing-function: cubic-bezier(0.4, 0, 1, 1) !important; }
+.nc-ease-out { transition-timing-function: cubic-bezier(0, 0, 0.2, 1) !important; }
+.nc-ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; }
+
+/* Transition Delay */
+.nc-delay-0 { transition-delay: 0s !important; }
+.nc-delay-75 { transition-delay: 75ms !important; }
+.nc-delay-100 { transition-delay: 100ms !important; }
+.nc-delay-150 { transition-delay: 150ms !important; }
+.nc-delay-200 { transition-delay: 200ms !important; }
+.nc-delay-300 { transition-delay: 300ms !important; }
+.nc-delay-500 { transition-delay: 500ms !important; }
+.nc-delay-700 { transition-delay: 700ms !important; }
+.nc-delay-1000 { transition-delay: 1000ms !important; }

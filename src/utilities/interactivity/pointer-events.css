@@ -1,0 +1,44 @@
+/* =======================================================
+   POINTER EVENTS UTILITIES
+   ======================================================= */
+
+.nc-pointer-events-none { 
+  pointer-events: none;
+}
+
+.nc-pointer-events-auto { 
+  pointer-events: auto;
+}
+
+/* Bounding Box */
+.nc-pointer-events-bounding-box { 
+  pointer-events: bounding-box;
+}
+
+.nc-pointer-events-fill { 
+  pointer-events: fill;
+}
+
+.nc-pointer-events-stroke { 
+  pointer-events: stroke;
+}
+
+.nc-pointer-events-all { 
+  pointer-events: all;
+}
+
+.nc-pointer-events-visible { 
+  pointer-events: visible;
+}
+
+.nc-pointer-events-visiblefill { 
+  pointer-events: visiblefill;
+}
+
+.nc-pointer-events-visiblestroke { 
+  pointer-events: visiblestroke;
+}
+
+.nc-pointer-events-painted { 
+  pointer-events: painted;
+}

@@ -1,0 +1,44 @@
+/* =======================================================
+   APPEARANCE UTILITIES
+   ======================================================= */
+
+.nc-appearance-none { 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* For custom form elements */
+.nc-appearance-auto { 
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
+}
+
+/* Button appearance */
+.nc-appearance-button { 
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+/* Textfield appearance */
+.nc-appearance-textfield { 
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Menulist appearance */
+.nc-appearance-menulist { 
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  appearance: menulist;
+}
+
+/* Searchfield appearance */
+.nc-appearance-searchfield { 
+  -webkit-appearance: searchfield;
+  -moz-appearance: searchfield;
+  appearance: searchfield;
+}

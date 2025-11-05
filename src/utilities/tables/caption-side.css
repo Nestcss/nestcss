@@ -1,0 +1,82 @@
+/* =======================================================
+   CAPTION SIDE UTILITIES
+   ======================================================= */
+
+.nc-caption-top {
+  caption-side: top;
+}
+
+.nc-caption-bottom {
+  caption-side: bottom;
+}
+
+/* Caption alignment */
+.nc-caption-left {
+  text-align: left;
+}
+
+.nc-caption-center {
+  text-align: center;
+}
+
+.nc-caption-right {
+  text-align: right;
+}
+
+/* Caption spacing */
+.nc-caption-mt-0 {
+  margin-top: 0;
+}
+
+.nc-caption-mt-1 {
+  margin-top: var(--nc-space-1);
+}
+
+.nc-caption-mt-2 {
+  margin-top: var(--nc-space-2);
+}
+
+.nc-caption-mt-4 {
+  margin-top: var(--nc-space-4);
+}
+
+.nc-caption-mb-0 {
+  margin-bottom: 0;
+}
+
+.nc-caption-mb-1 {
+  margin-bottom: var(--nc-space-1);
+}
+
+.nc-caption-mb-2 {
+  margin-bottom: var(--nc-space-2);
+}
+
+.nc-caption-mb-4 {
+  margin-bottom: var(--nc-space-4);
+}
+
+/* Caption text styling */
+.nc-caption-text-xs {
+  font-size: var(--nc-text-xs);
+}
+
+.nc-caption-text-sm {
+  font-size: var(--nc-text-sm);
+}
+
+.nc-caption-text-base {
+  font-size: var(--nc-text-base);
+}
+
+.nc-caption-font-normal {
+  font-weight: var(--nc-font-normal);
+}
+
+.nc-caption-font-medium {
+  font-weight: var(--nc-font-medium);
+}
+
+.nc-caption-font-semibold {
+  font-weight: var(--nc-font-semibold);
+}

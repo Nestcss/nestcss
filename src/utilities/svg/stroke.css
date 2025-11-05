@@ -1,0 +1,114 @@
+/* =======================================================
+   SVG STROKE UTILITIES
+   ======================================================= */
+
+/* ========== BASIC STROKE PROPERTIES ========== */
+
+/* Stroke Color Values */
+.nc-stroke-none { stroke: none; }
+.nc-stroke-current { stroke: currentColor; }
+.nc-stroke-inherit { stroke: inherit; }
+.nc-stroke-transparent { stroke: transparent; }
+
+/* Slate Stroke Colors */
+.nc-stroke-slate-50 { stroke: var(--nc-slate-50); }
+.nc-stroke-slate-100 { stroke: var(--nc-slate-100); }
+.nc-stroke-slate-200 { stroke: var(--nc-slate-200); }
+.nc-stroke-slate-300 { stroke: var(--nc-slate-300); }
+.nc-stroke-slate-400 { stroke: var(--nc-slate-400); }
+.nc-stroke-slate-500 { stroke: var(--nc-slate-500); }
+.nc-stroke-slate-600 { stroke: var(--nc-slate-600); }
+.nc-stroke-slate-700 { stroke: var(--nc-slate-700); }
+.nc-stroke-slate-800 { stroke: var(--nc-slate-800); }
+.nc-stroke-slate-900 { stroke: var(--nc-slate-900); }
+
+/* Primary Stroke Colors */
+.nc-stroke-primary-50 { stroke: var(--nc-primary-50); }
+.nc-stroke-primary-100 { stroke: var(--nc-primary-100); }
+.nc-stroke-primary-500 { stroke: var(--nc-primary-500); }
+.nc-stroke-primary-600 { stroke: var(--nc-primary-600); }
+.nc-stroke-primary-700 { stroke: var(--nc-primary-700); }
+
+/* Semantic Stroke Colors */
+.nc-stroke-success-500 { stroke: var(--nc-success-500); }
+.nc-stroke-warning-500 { stroke: var(--nc-warning-500); }
+.nc-stroke-error-500 { stroke: var(--nc-error-500); }
+
+/* Base Stroke Colors */
+.nc-stroke-black { stroke: var(--nc-black); }
+.nc-stroke-white { stroke: var(--nc-white); }
+
+/* ========== STROKE WIDTH ========== */
+
+.nc-stroke-0 { stroke-width: 0; }
+.nc-stroke-1 { stroke-width: 1; }
+.nc-stroke-2 { stroke-width: 2; }
+.nc-stroke-3 { stroke-width: 3; }
+.nc-stroke-4 { stroke-width: 4; }
+.nc-stroke-8 { stroke-width: 8; }
+
+/* ========== STROKE DASHARRAY ========== */
+
+.nc-stroke-dasharray-0 { stroke-dasharray: 0; }
+.nc-stroke-dasharray-1 { stroke-dasharray: 1; }
+.nc-stroke-dasharray-2 { stroke-dasharray: 2; }
+.nc-stroke-dasharray-4 { stroke-dasharray: 4; }
+.nc-stroke-dasharray-8 { stroke-dasharray: 8; }
+.nc-stroke-dasharray-16 { stroke-dasharray: 16; }
+
+/* Common dasharray patterns */
+.nc-stroke-dasharray-solid { stroke-dasharray: none; }
+.nc-stroke-dasharray-dashed { stroke-dasharray: 5, 5; }
+.nc-stroke-dasharray-dotted { stroke-dasharray: 1, 5; }
+.nc-stroke-dasharray-dash-dot { stroke-dasharray: 5, 5, 1, 5; }
+
+/* ========== STROKE LINECAP ========== */
+
+.nc-stroke-linecap-butt { stroke-linecap: butt; }
+.nc-stroke-linecap-round { stroke-linecap: round; }
+.nc-stroke-linecap-square { stroke-linecap: square; }
+
+/* ========== STROKE LINEJOIN ========== */
+
+.nc-stroke-linejoin-arcs { stroke-linejoin: arcs; }
+.nc-stroke-linejoin-bevel { stroke-linejoin: bevel; }
+.nc-stroke-linejoin-miter { stroke-linejoin: miter; }
+.nc-stroke-linejoin-miter-clip { stroke-linejoin: miter-clip; }
+.nc-stroke-linejoin-round { stroke-linejoin: round; }
+
+/* ========== STROKE OFFSET ========== */
+
+.nc-stroke-offset-0 { stroke-dashoffset: 0; }
+.nc-stroke-offset-1 { stroke-dashoffset: 1; }
+.nc-stroke-offset-2 { stroke-dashoffset: 2; }
+.nc-stroke-offset-4 { stroke-dashoffset: 4; }
+.nc-stroke-offset-8 { stroke-dashoffset: 8; }
+
+/* ========== STROKE OPACITY ========== */
+
+.nc-stroke-opacity-0 { stroke-opacity: 0; }
+.nc-stroke-opacity-5 { stroke-opacity: 0.05; }
+.nc-stroke-opacity-10 { stroke-opacity: 0.1; }
+.nc-stroke-opacity-25 { stroke-opacity: 0.25; }
+.nc-stroke-opacity-50 { stroke-opacity: 0.5; }
+.nc-stroke-opacity-75 { stroke-opacity: 0.75; }
+.nc-stroke-opacity-100 { stroke-opacity: 1; }
+
+/* ========== ANIMATION READY STROKES ========== */
+
+/* For animated stroke drawing effects */
+.nc-stroke-dasharray-full { stroke-dasharray: 1000; }
+.nc-stroke-dasharray-half { stroke-dasharray: 500; }
+.nc-stroke-dashoffset-full { stroke-dashoffset: 1000; }
+.nc-stroke-dashoffset-half { stroke-dashoffset: 500; }
+
+/* Stroke animation utilities */
+.nc-stroke-animate-draw {
+  animation: nc-stroke-draw 2s ease-in-out forwards;
+}
+
+@keyframes nc-stroke-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

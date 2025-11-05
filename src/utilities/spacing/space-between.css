@@ -1,0 +1,29 @@
+/* =======================================================
+   NESTCSS - SPACE BETWEEN UTILITIES
+   ======================================================= */
+
+/* Space Between - Vertical (margin-top on all but first child) */
+.nc-space-y-0 > * + * { margin-top: var(--nc-space-0) !important; }
+.nc-space-y-1 > * + * { margin-top: var(--nc-space-1) !important; }
+.nc-space-y-2 > * + * { margin-top: var(--nc-space-2) !important; }
+.nc-space-y-3 > * + * { margin-top: var(--nc-space-3) !important; }
+.nc-space-y-4 > * + * { margin-top: var(--nc-space-4) !important; }
+.nc-space-y-5 > * + * { margin-top: var(--nc-space-5) !important; }
+.nc-space-y-6 > * + * { margin-top: var(--nc-space-6) !important; }
+.nc-space-y-8 > * + * { margin-top: var(--nc-space-8) !important; }
+.nc-space-y-10 > * + * { margin-top: var(--nc-space-10) !important; }
+.nc-space-y-12 > * + * { margin-top: var(--nc-space-12) !important; }
+.nc-space-y-16 > * + * { margin-top: var(--nc-space-16) !important; }
+
+/* Space Between - Horizontal (margin-left on all but first child) */
+.nc-space-x-0 > * + * { margin-left: var(--nc-space-0) !important; }
+.nc-space-x-1 > * + * { margin-left: var(--nc-space-1) !important; }
+.nc-space-x-2 > * + * { margin-left: var(--nc-space-2) !important; }
+.nc-space-x-3 > * + * { margin-left: var(--nc-space-3) !important; }
+.nc-space-x-4 > * + * { margin-left: var(--nc-space-4) !important; }
+.nc-space-x-5 > * + * { margin-left: var(--nc-space-5) !important; }
+.nc-space-x-6 > * + * { margin-left: var(--nc-space-6) !important; }
+.nc-space-x-8 > * + * { margin-left: var(--nc-space-8) !important; }
+.nc-space-x-10 > * + * { margin-left: var(--nc-space-10) !important; }
+.nc-space-x-12 > * + * { margin-left: var(--nc-space-12) !important; }
+.nc-space-x-16 > * + * { margin-left: var(--nc-space-16) !important; }

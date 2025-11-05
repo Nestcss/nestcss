@@ -1,0 +1,419 @@
+/* =======================================================
+   FORM COMPONENTS
+   ======================================================= */
+
+/* ========== FORM CONTAINERS ========== */
+
+.nc-form {
+    width: 100%;
+}
+
+.nc-form-group {
+    margin-bottom: var(--nc-space-6);
+}
+
+.nc-form-label {
+    display: block;
+    font-size: var(--nc-text-sm);
+    font-weight: var(--nc-font-medium);
+    color: var(--nc-slate-700);
+    margin-bottom: var(--nc-space-2);
+}
+
+.nc-form-helper {
+    font-size: var(--nc-text-xs);
+    color: var(--nc-slate-500);
+    margin-top: var(--nc-space-2);
+}
+
+.nc-form-error {
+    font-size: var(--nc-text-xs);
+    color: var(--nc-error-500);
+    margin-top: var(--nc-space-2);
+}
+
+/* ========== INPUT FIELDS ========== */
+
+.nc-input {
+    width: 100%;
+    padding: var(--nc-space-3) var(--nc-space-4);
+    font-size: var(--nc-text-base);
+    border: 1px solid var(--nc-slate-300);
+    border-radius: var(--nc-radius);
+    background-color: var(--nc-white);
+    transition: all 0.2s ease;
+    color: var(--nc-slate-900);
+}
+
+.nc-input:focus {
+    outline: none;
+    border-color: var(--nc-primary-500);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.nc-input::placeholder {
+    color: var(--nc-slate-400);
+}
+
+/* Input Sizes */
+.nc-input-sm {
+    padding: var(--nc-space-2) var(--nc-space-3);
+    font-size: var(--nc-text-sm);
+}
+
+.nc-input-lg {
+    padding: var(--nc-space-4) var(--nc-space-5);
+    font-size: var(--nc-text-lg);
+}
+
+/* Input States */
+.nc-input-error {
+    border-color: var(--nc-error-500);
+}
+
+.nc-input-error:focus {
+    border-color: var(--nc-error-500);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.nc-input-success {
+    border-color: var(--nc-success-500);
+}
+
+.nc-input-success:focus {
+    border-color: var(--nc-success-500);
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+.nc-input-warning {
+    border-color: var(--nc-warning-500);
+}
+
+.nc-input-warning:focus {
+    border-color: var(--nc-warning-500);
+    box-shadow: 0 0 0 3px rgba(234, 179, 8, 0.1);
+}
+
+.nc-input-disabled {
+    background-color: var(--nc-slate-100);
+    color: var(--nc-slate-500);
+    cursor: not-allowed;
+}
+
+.nc-input-disabled:focus {
+    border-color: var(--nc-slate-300);
+    box-shadow: none;
+}
+
+/* ========== TEXTAREA ========== */
+
+.nc-textarea {
+    width: 100%;
+    padding: var(--nc-space-3) var(--nc-space-4);
+    font-size: var(--nc-text-base);
+    border: 1px solid var(--nc-slate-300);
+    border-radius: var(--nc-radius);
+    background-color: var(--nc-white);
+    transition: all 0.2s ease;
+    resize: vertical;
+    min-height: 80px;
+    font-family: var(--nc-font-sans);
+    line-height: var(--nc-leading-relaxed);
+}
+
+.nc-textarea:focus {
+    outline: none;
+    border-color: var(--nc-primary-500);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* ========== SELECT DROPDOWNS ========== */
+
+.nc-select {
+    width: 100%;
+    padding: var(--nc-space-3) var(--nc-space-4);
+    font-size: var(--nc-text-base);
+    border: 1px solid var(--nc-slate-300);
+    border-radius: var(--nc-radius);
+    background-color: var(--nc-white);
+    transition: all 0.2s ease;
+    color: var(--nc-slate-900);
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2364748b' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right var(--nc-space-2) center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-right: var(--nc-space-10);
+}
+
+.nc-select:focus {
+    outline: none;
+    border-color: var(--nc-primary-500);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Select Sizes */
+.nc-select-sm {
+    padding: var(--nc-space-2) var(--nc-space-3);
+    font-size: var(--nc-text-sm);
+    padding-right: var(--nc-space-8);
+}
+
+.nc-select-lg {
+    padding: var(--nc-space-4) var(--nc-space-5);
+    font-size: var(--nc-text-lg);
+    padding-right: var(--nc-space-12);
+}
+
+/* ========== CHECKBOXES & RADIOS ========== */
+
+.nc-checkbox,
+.nc-radio {
+    display: flex;
+    align-items: center;
+    gap: var(--nc-space-3);
+    cursor: pointer;
+    margin-bottom: var(--nc-space-2);
+}
+
+.nc-checkbox-input,
+.nc-radio-input {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--nc-slate-300);
+    border-radius: var(--nc-radius-sm);
+    background: var(--nc-white);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.nc-radio-input {
+    border-radius: var(--nc-radius-full);
+}
+
+.nc-checkbox-input:checked,
+.nc-radio-input:checked {
+    background-color: var(--nc-primary-500);
+    border-color: var(--nc-primary-500);
+}
+
+.nc-checkbox-input:checked::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.nc-radio-input:checked::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: var(--nc-radius-full);
+}
+
+.nc-checkbox-label,
+.nc-radio-label {
+    font-size: var(--nc-text-sm);
+    color: var(--nc-slate-700);
+    cursor: pointer;
+}
+
+/* Checkbox/Radio Groups */
+.nc-checkbox-group,
+.nc-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--nc-space-2);
+}
+
+.nc-checkbox-group-inline,
+.nc-radio-group-inline {
+    flex-direction: row;
+    align-items: center;
+}
+
+/* ========== SWITCHES ========== */
+
+.nc-switch {
+    display: flex;
+    align-items: center;
+    gap: var(--nc-space-3);
+    cursor: pointer;
+}
+
+.nc-switch-input {
+    width: 44px;
+    height: 24px;
+    border: 1px solid var(--nc-slate-300);
+    border-radius: var(--nc-radius-full);
+    background: var(--nc-slate-200);
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.nc-switch-input::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    background: var(--nc-white);
+    border-radius: var(--nc-radius-full);
+    transition: all 0.3s ease;
+    box-shadow: var(--nc-shadow-sm);
+}
+
+.nc-switch-input:checked {
+    background: var(--nc-primary-500);
+    border-color: var(--nc-primary-500);
+}
+
+.nc-switch-input:checked::after {
+    transform: translateX(20px);
+}
+
+.nc-switch-label {
+    font-size: var(--nc-text-sm);
+    color: var(--nc-slate-700);
+    cursor: pointer;
+}
+
+/* ========== FILE UPLOAD ========== */
+
+.nc-file-input {
+    width: 100%;
+    padding: var(--nc-space-3) var(--nc-space-4);
+    border: 2px dashed var(--nc-slate-300);
+    border-radius: var(--nc-radius);
+    background: var(--nc-slate-50);
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nc-file-input:hover {
+    border-color: var(--nc-primary-300);
+    background: var(--nc-primary-50);
+}
+
+.nc-file-input:focus {
+    outline: none;
+    border-color: var(--nc-primary-500);
+    background: var(--nc-primary-50);
+}
+
+/* ========== SEARCH INPUT ========== */
+
+.nc-search {
+    position: relative;
+    width: 100%;
+}
+
+.nc-search-input {
+    padding-left: var(--nc-space-10);
+}
+
+.nc-search-icon {
+    position: absolute;
+    left: var(--nc-space-4);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--nc-slate-400);
+    pointer-events: none;
+}
+
+/* ========== INPUT GROUPS ========== */
+
+.nc-input-group {
+    display: flex;
+    width: 100%;
+}
+
+.nc-input-group .nc-input,
+.nc-input-group .nc-select {
+    flex: 1;
+    border-radius: 0;
+}
+
+.nc-input-group .nc-input:first-child,
+.nc-input-group .nc-select:first-child {
+    border-top-left-radius: var(--nc-radius);
+    border-bottom-left-radius: var(--nc-radius);
+}
+
+.nc-input-group .nc-input:last-child,
+.nc-input-group .nc-select:last-child {
+    border-top-right-radius: var(--nc-radius);
+    border-bottom-right-radius: var(--nc-radius);
+}
+
+.nc-input-group-addon {
+    display: flex;
+    align-items: center;
+    padding: var(--nc-space-3) var(--nc-space-4);
+    background: var(--nc-slate-100);
+    border: 1px solid var(--nc-slate-300);
+    color: var(--nc-slate-600);
+    font-size: var(--nc-text-sm);
+    white-space: nowrap;
+}
+
+.nc-input-group-addon:first-child {
+    border-right: none;
+    border-top-left-radius: var(--nc-radius);
+    border-bottom-left-radius: var(--nc-radius);
+}
+
+.nc-input-group-addon:last-child {
+    border-left: none;
+    border-top-right-radius: var(--nc-radius);
+    border-bottom-right-radius: var(--nc-radius);
+}
+
+/* ========== FORM VALIDATION ========== */
+
+.nc-form-valid .nc-input {
+    border-color: var(--nc-success-500);
+}
+
+.nc-form-invalid .nc-input {
+    border-color: var(--nc-error-500);
+}
+
+/* ========== FORM LAYOUTS ========== */
+
+.nc-form-inline {
+    display: flex;
+    gap: var(--nc-space-4);
+    align-items: flex-end;
+}
+
+.nc-form-inline .nc-form-group {
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.nc-form-horizontal {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--nc-space-4);
+    align-items: center;
+}
+
+.nc-form-horizontal .nc-form-label {
+    margin-bottom: 0;
+    text-align: right;
+}

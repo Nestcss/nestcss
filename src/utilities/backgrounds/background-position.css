@@ -1,0 +1,14 @@
+/* =======================================================
+   NESTCSS - BACKGROUND POSITION UTILITIES
+   ======================================================= */
+
+/* Background Position */
+.nc-bg-center { background-position: center !important; }
+.nc-bg-top { background-position: top !important; }
+.nc-bg-bottom { background-position: bottom !important; }
+.nc-bg-left { background-position: left !important; }
+.nc-bg-right { background-position: right !important; }
+.nc-bg-top-left { background-position: top left !important; }
+.nc-bg-top-right { background-position: top right !important; }
+.nc-bg-bottom-left { background-position: bottom left !important; }
+.nc-bg-bottom-right { background-position: bottom right !important; }

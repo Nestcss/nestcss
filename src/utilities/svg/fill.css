@@ -1,0 +1,63 @@
+/* =======================================================
+   SVG FILL UTILITIES
+   ======================================================= */
+
+/* Basic Fill Values */
+.nc-fill-none { fill: none; }
+.nc-fill-current { fill: currentColor; }
+.nc-fill-inherit { fill: inherit; }
+.nc-fill-transparent { fill: transparent; }
+
+/* Slate Fill Colors */
+.nc-fill-slate-50 { fill: var(--nc-slate-50); }
+.nc-fill-slate-100 { fill: var(--nc-slate-100); }
+.nc-fill-slate-200 { fill: var(--nc-slate-200); }
+.nc-fill-slate-300 { fill: var(--nc-slate-300); }
+.nc-fill-slate-400 { fill: var(--nc-slate-400); }
+.nc-fill-slate-500 { fill: var(--nc-slate-500); }
+.nc-fill-slate-600 { fill: var(--nc-slate-600); }
+.nc-fill-slate-700 { fill: var(--nc-slate-700); }
+.nc-fill-slate-800 { fill: var(--nc-slate-800); }
+.nc-fill-slate-900 { fill: var(--nc-slate-900); }
+
+/* Gray Fill Colors */
+.nc-fill-gray-50 { fill: var(--nc-gray-50); }
+.nc-fill-gray-100 { fill: var(--nc-gray-100); }
+.nc-fill-gray-200 { fill: var(--nc-gray-200); }
+.nc-fill-gray-300 { fill: var(--nc-gray-300); }
+.nc-fill-gray-400 { fill: var(--nc-gray-400); }
+.nc-fill-gray-500 { fill: var(--nc-gray-500); }
+.nc-fill-gray-600 { fill: var(--nc-gray-600); }
+.nc-fill-gray-700 { fill: var(--nc-gray-700); }
+.nc-fill-gray-800 { fill: var(--nc-gray-800); }
+.nc-fill-gray-900 { fill: var(--nc-gray-900); }
+
+/* Primary Fill Colors */
+.nc-fill-primary-50 { fill: var(--nc-primary-50); }
+.nc-fill-primary-100 { fill: var(--nc-primary-100); }
+.nc-fill-primary-500 { fill: var(--nc-primary-500); }
+.nc-fill-primary-600 { fill: var(--nc-primary-600); }
+.nc-fill-primary-700 { fill: var(--nc-primary-700); }
+
+/* Semantic Fill Colors */
+.nc-fill-success-50 { fill: var(--nc-success-50); }
+.nc-fill-success-100 { fill: var(--nc-success-100); }
+.nc-fill-success-500 { fill: var(--nc-success-500); }
+.nc-fill-success-600 { fill: var(--nc-success-600); }
+.nc-fill-success-700 { fill: var(--nc-success-700); }
+
+.nc-fill-warning-50 { fill: var(--nc-warning-50); }
+.nc-fill-warning-100 { fill: var(--nc-warning-100); }
+.nc-fill-warning-500 { fill: var(--nc-warning-500); }
+.nc-fill-warning-600 { fill: var(--nc-warning-600); }
+.nc-fill-warning-700 { fill: var(--nc-warning-700); }
+
+.nc-fill-error-50 { fill: var(--nc-error-50); }
+.nc-fill-error-100 { fill: var(--nc-error-100); }
+.nc-fill-error-500 { fill: var(--nc-error-500); }
+.nc-fill-error-600 { fill: var(--nc-error-600); }
+.nc-fill-error-700 { fill: var(--nc-error-700); }
+
+/* Base Colors */
+.nc-fill-black { fill: var(--nc-black); }
+.nc-fill-white { fill: var(--nc-white); }

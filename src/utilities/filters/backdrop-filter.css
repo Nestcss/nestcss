@@ -1,0 +1,76 @@
+/* =======================================================
+   NESTCSS - BACKDROP FILTER UTILITIES
+   ======================================================= */
+
+/* Backdrop Blur */
+.nc-backdrop-blur-0 { backdrop-filter: blur(0) !important; }
+.nc-backdrop-blur-sm { backdrop-filter: blur(4px) !important; }
+.nc-backdrop-blur { backdrop-filter: blur(8px) !important; }
+.nc-backdrop-blur-md { backdrop-filter: blur(12px) !important; }
+.nc-backdrop-blur-lg { backdrop-filter: blur(16px) !important; }
+.nc-backdrop-blur-xl { backdrop-filter: blur(24px) !important; }
+.nc-backdrop-blur-2xl { backdrop-filter: blur(40px) !important; }
+
+/* Backdrop Brightness */
+.nc-backdrop-brightness-0 { backdrop-filter: brightness(0) !important; }
+.nc-backdrop-brightness-50 { backdrop-filter: brightness(0.5) !important; }
+.nc-backdrop-brightness-75 { backdrop-filter: brightness(0.75) !important; }
+.nc-backdrop-brightness-90 { backdrop-filter: brightness(0.9) !important; }
+.nc-backdrop-brightness-95 { backdrop-filter: brightness(0.95) !important; }
+.nc-backdrop-brightness-100 { backdrop-filter: brightness(1) !important; }
+.nc-backdrop-brightness-105 { backdrop-filter: brightness(1.05) !important; }
+.nc-backdrop-brightness-110 { backdrop-filter: brightness(1.1) !important; }
+.nc-backdrop-brightness-125 { backdrop-filter: brightness(1.25) !important; }
+.nc-backdrop-brightness-150 { backdrop-filter: brightness(1.5) !important; }
+
+/* Backdrop Contrast */
+.nc-backdrop-contrast-0 { backdrop-filter: contrast(0) !important; }
+.nc-backdrop-contrast-50 { backdrop-filter: contrast(0.5) !important; }
+.nc-backdrop-contrast-75 { backdrop-filter: contrast(0.75) !important; }
+.nc-backdrop-contrast-100 { backdrop-filter: contrast(1) !important; }
+.nc-backdrop-contrast-125 { backdrop-filter: contrast(1.25) !important; }
+.nc-backdrop-contrast-150 { backdrop-filter: contrast(1.5) !important; }
+
+/* Backdrop Grayscale */
+.nc-backdrop-grayscale-0 { backdrop-filter: grayscale(0) !important; }
+.nc-backdrop-grayscale { backdrop-filter: grayscale(100%) !important; }
+
+/* Backdrop Hue Rotate */
+.nc-backdrop-hue-rotate-0 { backdrop-filter: hue-rotate(0deg) !important; }
+.nc-backdrop-hue-rotate-15 { backdrop-filter: hue-rotate(15deg) !important; }
+.nc-backdrop-hue-rotate-30 { backdrop-filter: hue-rotate(30deg) !important; }
+.nc-backdrop-hue-rotate-60 { backdrop-filter: hue-rotate(60deg) !important; }
+.nc-backdrop-hue-rotate-90 { backdrop-filter: hue-rotate(90deg) !important; }
+.nc-backdrop-hue-rotate-180 { backdrop-filter: hue-rotate(180deg) !important; }
+
+/* Backdrop Invert */
+.nc-backdrop-invert-0 { backdrop-filter: invert(0) !important; }
+.nc-backdrop-invert { backdrop-filter: invert(100%) !important; }
+
+/* Backdrop Opacity */
+.nc-backdrop-opacity-0 { backdrop-filter: opacity(0) !important; }
+.nc-backdrop-opacity-5 { backdrop-filter: opacity(0.05) !important; }
+.nc-backdrop-opacity-10 { backdrop-filter: opacity(0.1) !important; }
+.nc-backdrop-opacity-20 { backdrop-filter: opacity(0.2) !important; }
+.nc-backdrop-opacity-25 { backdrop-filter: opacity(0.25) !important; }
+.nc-backdrop-opacity-30 { backdrop-filter: opacity(0.3) !important; }
+.nc-backdrop-opacity-40 { backdrop-filter: opacity(0.4) !important; }
+.nc-backdrop-opacity-50 { backdrop-filter: opacity(0.5) !important; }
+.nc-backdrop-opacity-60 { backdrop-filter: opacity(0.6) !important; }
+.nc-backdrop-opacity-70 { backdrop-filter: opacity(0.7) !important; }
+.nc-backdrop-opacity-75 { backdrop-filter: opacity(0.75) !important; }
+.nc-backdrop-opacity-80 { backdrop-filter: opacity(0.8) !important; }
+.nc-backdrop-opacity-90 { backdrop-filter: opacity(0.9) !important; }
+.nc-backdrop-opacity-95 { backdrop-filter: opacity(0.95) !important; }
+.nc-backdrop-opacity-100 { backdrop-filter: opacity(1) !important; }
+
+/* Backdrop Saturate */
+.nc-backdrop-saturate-0 { backdrop-filter: saturate(0) !important; }
+.nc-backdrop-saturate-50 { backdrop-filter: saturate(0.5) !important; }
+.nc-backdrop-saturate-100 { backdrop-filter: saturate(1) !important; }
+.nc-backdrop-saturate-150 { backdrop-filter: saturate(1.5) !important; }
+.nc-backdrop-saturate-200 { backdrop-filter: saturate(2) !important; }
+
+/* Backdrop Sepia */
+.nc-backdrop-sepia-0 { backdrop-filter: sepia(0) !important; }
+.nc-backdrop-sepia { backdrop-filter: sepia(100%) !important; }

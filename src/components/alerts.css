@@ -1,0 +1,419 @@
+/* =======================================================
+   ALERT COMPONENTS
+   ======================================================= */
+
+/* ========== BASE ALERT ========== */
+
+.nc-alert {
+    position: relative;
+    padding: var(--nc-space-4) var(--nc-space-6);
+    border: 1px solid transparent;
+    border-radius: var(--nc-radius-lg);
+    margin-bottom: var(--nc-space-4);
+    font-size: var(--nc-text-base);
+    line-height: var(--nc-leading-relaxed);
+}
+
+/* ========== ALERT VARIANTS ========== */
+
+/* Primary Alert */
+.nc-alert-primary {
+    background-color: var(--nc-primary-50);
+    border-color: var(--nc-primary-200);
+    color: var(--nc-primary-800);
+}
+
+.nc-alert-primary .nc-alert-title {
+    color: var(--nc-primary-700);
+}
+
+/* Success Alert */
+.nc-alert-success {
+    background-color: var(--nc-success-50);
+    border-color: var(--nc-success-200);
+    color: var(--nc-success-800);
+}
+
+.nc-alert-success .nc-alert-title {
+    color: var(--nc-success-700);
+}
+
+/* Warning Alert */
+.nc-alert-warning {
+    background-color: var(--nc-warning-50);
+    border-color: var(--nc-warning-200);
+    color: var(--nc-warning-800);
+}
+
+.nc-alert-warning .nc-alert-title {
+    color: var(--nc-warning-700);
+}
+
+/* Error Alert */
+.nc-alert-error {
+    background-color: var(--nc-error-50);
+    border-color: var(--nc-error-200);
+    color: var(--nc-error-800);
+}
+
+.nc-alert-error .nc-alert-title {
+    color: var(--nc-error-700);
+}
+
+/* Info Alert */
+.nc-alert-info {
+    background-color: var(--nc-slate-50);
+    border-color: var(--nc-slate-200);
+    color: var(--nc-slate-800);
+}
+
+.nc-alert-info .nc-alert-title {
+    color: var(--nc-slate-700);
+}
+
+/* ========== ALERT ELEMENTS ========== */
+
+/* Alert Title */
+.nc-alert-title {
+    font-size: var(--nc-text-lg);
+    font-weight: var(--nc-font-semibold);
+    margin: 0 0 var(--nc-space-2) 0;
+    display: flex;
+    align-items: center;
+    gap: var(--nc-space-2);
+}
+
+.nc-alert-title:last-child {
+    margin-bottom: 0;
+}
+
+/* Alert Content */
+.nc-alert-content {
+    margin: 0;
+}
+
+.nc-alert-content p {
+    margin: 0 0 var(--nc-space-2) 0;
+}
+
+.nc-alert-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Alert with Icon */
+.nc-alert-has-icon {
+    display: flex;
+    gap: var(--nc-space-3);
+    align-items: flex-start;
+}
+
+.nc-alert-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+/* ========== ALERT ACTIONS ========== */
+
+/* Dismissible Alert */
+.nc-alert-dismissible {
+    padding-right: var(--nc-space-12);
+}
+
+.nc-alert-close {
+    position: absolute;
+    top: var(--nc-space-4);
+    right: var(--nc-space-4);
+    background: none;
+    border: none;
+    font-size: var(--nc-text-lg);
+    color: inherit;
+    opacity: 0.7;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--nc-radius);
+    transition: all 0.2s ease;
+}
+
+.nc-alert-close:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Alert with Actions */
+.nc-alert-actions {
+    display: flex;
+    gap: var(--nc-space-2);
+    margin-top: var(--nc-space-3);
+    flex-wrap: wrap;
+}
+
+.nc-alert-actions .nc-btn {
+    font-size: var(--nc-text-sm);
+    padding: var(--nc-space-1) var(--nc-space-3);
+}
+
+/* ========== ALERT SIZES ========== */
+
+/* Small Alert */
+.nc-alert-sm {
+    padding: var(--nc-space-3) var(--nc-space-4);
+    font-size: var(--nc-text-sm);
+}
+
+.nc-alert-sm .nc-alert-title {
+    font-size: var(--nc-text-base);
+}
+
+.nc-alert-sm .nc-alert-close {
+    top: var(--nc-space-3);
+    right: var(--nc-space-3);
+}
+
+/* Large Alert */
+.nc-alert-lg {
+    padding: var(--nc-space-6) var(--nc-space-8);
+    font-size: var(--nc-text-lg);
+}
+
+.nc-alert-lg .nc-alert-title {
+    font-size: var(--nc-text-xl);
+}
+
+.nc-alert-lg .nc-alert-close {
+    top: var(--nc-space-6);
+    right: var(--nc-space-6);
+}
+
+/* ========== ALERT TYPES ========== */
+
+/* Banner Alert (Full Width) */
+.nc-alert-banner {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 0;
+}
+
+/* Outline Alert */
+.nc-alert-outline {
+    background-color: transparent;
+}
+
+.nc-alert-outline.nc-alert-primary {
+    border-color: var(--nc-primary-500);
+    color: var(--nc-primary-700);
+}
+
+.nc-alert-outline.nc-alert-success {
+    border-color: var(--nc-success-500);
+    color: var(--nc-success-700);
+}
+
+.nc-alert-outline.nc-alert-warning {
+    border-color: var(--nc-warning-500);
+    color: var(--nc-warning-700);
+}
+
+.nc-alert-outline.nc-alert-error {
+    border-color: var(--nc-error-500);
+    color: var(--nc-error-700);
+}
+
+/* Solid Alert */
+.nc-alert-solid {
+    color: var(--nc-white);
+    border: none;
+}
+
+.nc-alert-solid.nc-alert-primary {
+    background-color: var(--nc-primary-500);
+}
+
+.nc-alert-solid.nc-alert-success {
+    background-color: var(--nc-success-500);
+}
+
+.nc-alert-solid.nc-alert-warning {
+    background-color: var(--nc-warning-500);
+}
+
+.nc-alert-solid.nc-alert-error {
+    background-color: var(--nc-error-500);
+}
+
+.nc-alert-solid .nc-alert-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ========== TOAST NOTIFICATIONS ========== */
+
+.nc-toast {
+    position: fixed;
+    z-index: var(--nc-z-50);
+    max-width: 400px;
+    background: var(--nc-white);
+    border: 1px solid var(--nc-slate-200);
+    border-radius: var(--nc-radius-lg);
+    box-shadow: var(--nc-shadow-xl);
+    padding: var(--nc-space-4);
+    animation: nc-toast-slide-in 0.3s ease;
+}
+
+.nc-toast-top-right {
+    top: var(--nc-space-6);
+    right: var(--nc-space-6);
+}
+
+.nc-toast-top-left {
+    top: var(--nc-space-6);
+    left: var(--nc-space-6);
+}
+
+.nc-toast-bottom-right {
+    bottom: var(--nc-space-6);
+    right: var(--nc-space-6);
+}
+
+.nc-toast-bottom-left {
+    bottom: var(--nc-space-6);
+    left: var(--nc-space-6);
+}
+
+.nc-toast-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes nc-toast-slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nc-toast-exit {
+    animation: nc-toast-slide-out 0.3s ease;
+}
+
+@keyframes nc-toast-slide-out {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* Toast with Progress */
+.nc-toast-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: var(--nc-primary-500);
+    border-radius: 0 0 var(--nc-radius-lg) var(--nc-radius-lg);
+    animation: nc-toast-progress 5s linear;
+}
+
+@keyframes nc-toast-progress {
+    from { width: 100%; }
+    to { width: 0%; }
+}
+
+/* ========== ALERT GROUP ========== */
+
+.nc-alert-group {
+    position: fixed;
+    z-index: var(--nc-z-40);
+    width: 100%;
+    pointer-events: none;
+}
+
+.nc-alert-group-top {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nc-alert-group-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.nc-alert-group .nc-alert {
+    pointer-events: all;
+    margin: var(--nc-space-2) auto;
+    max-width: 600px;
+}
+
+/* ========== ALERT STATES ========== */
+
+/* Interactive Alert */
+.nc-alert-interactive {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nc-alert-interactive:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--nc-shadow-md);
+}
+
+/* Loading Alert */
+.nc-alert-loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.nc-alert-loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    animation: nc-alert-loading 1.5s infinite;
+}
+
+@keyframes nc-alert-loading {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* ========== ALERT ICONS ========== */
+
+/* Default Icons for Alert Types */
+.nc-alert-primary .nc-alert-icon::before {
+    content: "💡";
+}
+
+.nc-alert-success .nc-alert-icon::before {
+    content: "✅";
+}
+
+.nc-alert-warning .nc-alert-icon::before {
+    content: "⚠️";
+}
+
+.nc-alert-error .nc-alert-icon::before {
+    content: "❌";
+}
+
+.nc-alert-info .nc-alert-icon::before {
+    content: "ℹ️";
+}

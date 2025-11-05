@@ -1,0 +1,38 @@
+/* =======================================================
+   NESTCSS - BORDER STYLE UTILITIES
+   ======================================================= */
+
+/* Border Style */
+.nc-border-solid { border-style: solid !important; }
+.nc-border-dashed { border-style: dashed !important; }
+.nc-border-dotted { border-style: dotted !important; }
+.nc-border-double { border-style: double !important; }
+.nc-border-hidden { border-style: hidden !important; }
+.nc-border-none { border-style: none !important; }
+
+/* Divide Width - Between elements */
+.nc-divide-x-0 > * + * { border-left-width: 0 !important; }
+.nc-divide-x > * + * { border-left-width: 1px !important; }
+.nc-divide-x-2 > * + * { border-left-width: 2px !important; }
+.nc-divide-x-4 > * + * { border-left-width: 4px !important; }
+.nc-divide-x-8 > * + * { border-left-width: 8px !important; }
+
+.nc-divide-y-0 > * + * { border-top-width: 0 !important; }
+.nc-divide-y > * + * { border-top-width: 1px !important; }
+.nc-divide-y-2 > * + * { border-top-width: 2px !important; }
+.nc-divide-y-4 > * + * { border-top-width: 4px !important; }
+.nc-divide-y-8 > * + * { border-top-width: 8px !important; }
+
+/* Divide Style */
+.nc-divide-solid > * + * { border-style: solid !important; }
+.nc-divide-dashed > * + * { border-style: dashed !important; }
+.nc-divide-dotted > * + * { border-style: dotted !important; }
+.nc-divide-double > * + * { border-style: double !important; }
+
+/* Divide Color */
+.nc-divide-slate-100 > * + * { border-color: var(--nc-slate-100) !important; }
+.nc-divide-slate-200 > * + * { border-color: var(--nc-slate-200) !important; }
+.nc-divide-gray-100 > * + * { border-color: var(--nc-gray-100) !important; }
+.nc-divide-gray-200 > * + * { border-color: var(--nc-gray-200) !important; }
+.nc-divide-transparent > * + * { border-color: transparent !important; }
+.nc-divide-current > * + * { border-color: currentColor !important; }

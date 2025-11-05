@@ -1,0 +1,130 @@
+/* =======================================================
+   STATES UTILITIES (Hover, Focus, Active, etc.)
+   ======================================================= */
+
+/* ========== HOVER STATES ========== */
+
+/* Background colors on hover */
+.nc-hover-bg-primary:hover { background-color: var(--nc-primary-500); }
+.nc-hover-bg-primary-light:hover { background-color: var(--nc-primary-100); }
+.nc-hover-bg-primary-dark:hover { background-color: var(--nc-primary-600); }
+.nc-hover-bg-success:hover { background-color: var(--nc-success-500); }
+.nc-hover-bg-warning:hover { background-color: var(--nc-warning-500); }
+.nc-hover-bg-error:hover { background-color: var(--nc-error-500); }
+.nc-hover-bg-slate-100:hover { background-color: var(--nc-slate-100); }
+.nc-hover-bg-slate-200:hover { background-color: var(--nc-slate-200); }
+.nc-hover-bg-transparent:hover { background-color: transparent; }
+
+/* Text colors on hover */
+.nc-hover-text-primary:hover { color: var(--nc-primary-500); }
+.nc-hover-text-white:hover { color: var(--nc-white); }
+.nc-hover-text-black:hover { color: var(--nc-black); }
+.nc-hover-text-slate-500:hover { color: var(--nc-slate-500); }
+.nc-hover-text-slate-700:hover { color: var(--nc-slate-700); }
+
+/* Border colors on hover */
+.nc-hover-border-primary:hover { border-color: var(--nc-primary-500); }
+.nc-hover-border-transparent:hover { border-color: transparent; }
+
+/* Opacity on hover */
+.nc-hover-opacity-75:hover { opacity: 0.75; }
+.nc-hover-opacity-50:hover { opacity: 0.5; }
+.nc-hover-opacity-25:hover { opacity: 0.25; }
+.nc-hover-opacity-0:hover { opacity: 0; }
+
+/* Scale transforms on hover */
+.nc-hover-scale-105:hover { transform: scale(1.05); }
+.nc-hover-scale-110:hover { transform: scale(1.1); }
+.nc-hover-scale-95:hover { transform: scale(0.95); }
+.nc-hover-scale-90:hover { transform: scale(0.9); }
+
+/* Shadow effects on hover */
+.nc-hover-shadow-sm:hover { box-shadow: var(--nc-shadow-sm); }
+.nc-hover-shadow:hover { box-shadow: var(--nc-shadow); }
+.nc-hover-shadow-md:hover { box-shadow: var(--nc-shadow-md); }
+.nc-hover-shadow-lg:hover { box-shadow: var(--nc-shadow-lg); }
+.nc-hover-shadow-xl:hover { box-shadow: var(--nc-shadow-xl); }
+.nc-hover-shadow-none:hover { box-shadow: none; }
+
+/* ========== FOCUS STATES ========== */
+
+/* Focus outline */
+.nc-focus-outline-none:focus { 
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.nc-focus-outline-primary:focus { 
+  outline: 2px solid var(--nc-primary-500);
+  outline-offset: 2px;
+}
+
+.nc-focus-outline-success:focus { 
+  outline: 2px solid var(--nc-success-500);
+  outline-offset: 2px;
+}
+
+.nc-focus-outline-error:focus { 
+  outline: 2px solid var(--nc-error-500);
+  outline-offset: 2px;
+}
+
+/* Focus ring (box-shadow based) */
+.nc-focus-ring:focus { 
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+  outline: none;
+}
+
+.nc-focus-ring-primary:focus { 
+  box-shadow: 0 0 0 3px var(--nc-primary-500);
+  outline: none;
+}
+
+.nc-focus-ring-success:focus { 
+  box-shadow: 0 0 0 3px var(--nc-success-500);
+  outline: none;
+}
+
+.nc-focus-ring-error:focus { 
+  box-shadow: 0 0 0 3px var(--nc-error-500);
+  outline: none;
+}
+
+/* Focus within */
+.nc-focus-within-bg-slate-50:focus-within { background-color: var(--nc-slate-50); }
+.nc-focus-within-border-primary:focus-within { border-color: var(--nc-primary-500); }
+
+/* ========== ACTIVE STATES ========== */
+
+.nc-active-scale-95:active { transform: scale(0.95); }
+.nc-active-scale-90:active { transform: scale(0.9); }
+.nc-active-opacity-75:active { opacity: 0.75; }
+
+.nc-active-bg-primary:active { background-color: var(--nc-primary-600); }
+.nc-active-bg-slate-200:active { background-color: var(--nc-slate-200); }
+
+/* ========== DISABLED STATES ========== */
+
+.nc-disabled-opacity-50:disabled { opacity: 0.5; }
+.nc-disabled-opacity-75:disabled { opacity: 0.75; }
+.nc-disabled-cursor-not-allowed:disabled { cursor: not-allowed; }
+.nc-disabled-pointer-events-none:disabled { pointer-events: none; }
+
+/* ========== GROUP STATES ========== */
+
+.nc-group:hover .nc-group-hover-bg-primary { background-color: var(--nc-primary-500); }
+.nc-group:hover .nc-group-hover-text-primary { color: var(--nc-primary-500); }
+.nc-group:hover .nc-group-hover-opacity-100 { opacity: 1; }
+.nc-group:focus .nc-group-focus-opacity-100 { opacity: 1; }
+
+/* ========== FOCUS-VISIBLE ========== */
+
+.nc-focus-visible-outline-primary:focus-visible { 
+  outline: 2px solid var(--nc-primary-500);
+  outline-offset: 2px;
+}
+
+.nc-focus-visible-ring:focus-visible { 
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+  outline: none;
+}

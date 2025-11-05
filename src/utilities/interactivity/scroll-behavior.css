@@ -1,0 +1,41 @@
+/* =======================================================
+   SCROLL BEHAVIOR UTILITIES
+   ======================================================= */
+
+.nc-scroll-auto { 
+  scroll-behavior: auto;
+}
+
+.nc-scroll-smooth { 
+  scroll-behavior: smooth;
+}
+
+/* Scroll Snap Alignment */
+.nc-snap-start { scroll-snap-align: start; }
+.nc-snap-end { scroll-snap-align: end; }
+.nc-snap-center { scroll-snap-align: center; }
+.nc-snap-align-none { scroll-snap-align: none; }
+
+/* Scroll Snap Stop */
+.nc-snap-normal { scroll-snap-stop: normal; }
+.nc-snap-always { scroll-snap-stop: always; }
+
+/* Scroll Snap Type */
+.nc-snap-none { scroll-snap-type: none; }
+.nc-snap-x { scroll-snap-type: x mandatory; }
+.nc-snap-y { scroll-snap-type: y mandatory; }
+.nc-snap-both { scroll-snap-type: both mandatory; }
+
+/* Scroll Margin */
+.nc-scroll-m-0 { scroll-margin: 0; }
+.nc-scroll-m-1 { scroll-margin: var(--nc-space-1); }
+.nc-scroll-m-2 { scroll-margin: var(--nc-space-2); }
+.nc-scroll-m-4 { scroll-margin: var(--nc-space-4); }
+.nc-scroll-m-8 { scroll-margin: var(--nc-space-8); }
+
+/* Scroll Padding */
+.nc-scroll-p-0 { scroll-padding: 0; }
+.nc-scroll-p-1 { scroll-padding: var(--nc-space-1); }
+.nc-scroll-p-2 { scroll-padding: var(--nc-space-2); }
+.nc-scroll-p-4 { scroll-padding: var(--nc-space-4); }
+.nc-scroll-p-8 { scroll-padding: var(--nc-space-8); }

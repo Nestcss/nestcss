@@ -1,0 +1,134 @@
+/* =======================================================
+   NESTCSS - MAIN ENTRY POINT
+   ======================================================= */
+
+/* Core Foundation */
+@import url('../src/core/variables.css');
+@import url('../src/core/reset.css');
+@import url('../src/core/base.css');
+
+/* Layout Utilities */
+@import url('../src/utilities/layout/display.css');
+@import url('../src/utilities/layout/position.css');
+@import url('../src/utilities/layout/top-right-bottom-left.css');
+@import url('../src/utilities/layout/visibility.css');
+@import url('../src/utilities/layout/z-index.css');
+
+/* Flexbox & Grid Utilities */
+@import url('../src/utilities/flexbox-grid/flex.css');
+@import url('../src/utilities/flexbox-grid/grid.css');
+@import url('../src/utilities/flexbox-grid/gap.css');
+
+/* Spacing Utilities */
+@import url('../src/utilities/spacing/padding.css');
+@import url('../src/utilities/spacing/margin.css');
+@import url('../src/utilities/spacing/space-between.css');
+
+/* Sizing Utilities */
+@import url('../src/utilities/sizing/width.css');
+@import url('../src/utilities/sizing/height.css');
+@import url('../src/utilities/sizing/min-max.css');
+@import url('../src/utilities/sizing/aspect-ratio.css');
+
+/* Typography Utilities */
+@import url('../src/utilities/typography/font.css');
+@import url('../src/utilities/typography/text.css');
+@import url('../src/utilities/typography/list.css');
+
+/* Background Utilities */
+@import url('../src/utilities/backgrounds/background-color.css');
+@import url('../src/utilities/backgrounds/background-image.css');
+@import url('../src/utilities/backgrounds/background-position.css');
+
+/* Border Utilities */
+@import url('../src/utilities/borders/border-width.css');
+@import url('../src/utilities/borders/border-color.css');
+@import url('../src/utilities/borders/border-radius.css');
+@import url('../src/utilities/borders/border-style.css');
+
+/* Effects Utilities */
+@import url('../src/utilities/effects/box-shadow.css');
+@import url('../src/utilities/effects/opacity.css');
+@import url('../src/utilities/effects/mix-blend-mode.css');
+
+/* Transforms Utilities */
+@import url('../src/utilities/transforms/transform.css');
+@import url('../src/utilities/transforms/transition.css');
+@import url('../src/utilities/transforms/animation.css');
+
+/* Filters Utilities */
+@import url('../src/utilities/filters/filter.css');
+@import url('../src/utilities/filters/backdrop-filter.css');
+
+/* Interactivity Utilities */
+@import url('../src/utilities/interactivity/cursor.css');
+@import url('../src/utilities/interactivity/user-select.css');
+@import url('../src/utilities/interactivity/scroll-behavior.css');
+
+/* Tables Utilities */
+@import url('../src/utilities/tables/border-collapse.css');
+@import url('../src/utilities/tables/table-layout.css');
+
+/* SVG Utilities */
+@import url('../src/utilities/svg/fill.css');
+@import url('../src/utilities/svg/stroke.css');
+
+/* Responsive Utilities */
+@import url('../src/utilities/responsive/breakpoints.css');
+@import url('../src/utilities/responsive/states.css');
+@import url('../src/utilities/responsive/dark-mode.css');
+
+/* Components */
+@import url('../src/components/buttons.css');
+@import url('../src/components/cards.css');
+@import url('../src/components/forms.css');
+@import url('../src/components/navigation.css');
+@import url('../src/components/alerts.css');
+@import url('../src/components/badges.css');
+@import url('../src/components/modals.css');
+@import url('../src/components/grids.css');
+
+/* Themes */
+@import url('../src/themes/default.css');
+@import url('../src/themes/dark.css');
+@import url('../src/themes/light.css');
+
+/* ========== NESTCSS CONTAINER ========== */
+
+.nc-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--nc-space-4);
+  padding-right: var(--nc-space-4);
+}
+
+@media (min-width: 640px) {
+  .nc-container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nc-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nc-container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .nc-container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .nc-container {
+    max-width: 1536px;
+  }
+}

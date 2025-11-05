@@ -1,0 +1,164 @@
+/* =======================================================
+   NESTCSS RESET - MODERN CSS RESET
+   Based on modern reset principles with NESTCSS enhancements
+   ======================================================= */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html {
+  /* 1rem = 16px by default, improves accessibility */
+  font-size: 100%;
+  
+  /* Smooth scrolling for users who don't prefer reduced motion */
+  scroll-behavior: smooth;
+  
+  /* Prevent font size inflation on iOS */
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Set core body defaults */
+body {
+  /* Improved text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+  
+  /* Default typography */
+  font-family: var(--nc-font-sans);
+  font-size: var(--nc-text-base);
+  line-height: var(--nc-leading-normal);
+  color: var(--nc-slate-900);
+  background-color: var(--nc-white);
+  
+  /* Minimum page height */
+  min-height: 100vh;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Make media elements easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Remove default link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Improve table defaults */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4, h5, h6,
+button, input, label {
+  line-height: var(--nc-leading-tight);
+}
+
+/* Balance text wrapping for better readability */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p, li {
+  text-wrap: pretty;
+}
+
+/* Reset focus styles for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Custom focus styles for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--nc-primary-500);
+  outline-offset: 2px;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Ensure hidden attribute works properly */
+[hidden] {
+  display: none !important;
+}
+
+/* Improve dialog defaults */
+dialog {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+/* Remove default summary marker */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Improve text selection */
+::selection {
+  background-color: var(--nc-primary-100);
+  color: var(--nc-slate-900);
+}

@@ -1,0 +1,25 @@
+/* =======================================================
+   RESIZE UTILITIES
+   ======================================================= */
+
+.nc-resize-none { 
+  resize: none;
+}
+
+.nc-resize-y { 
+  resize: vertical;
+}
+
+.nc-resize-x { 
+  resize: horizontal;
+}
+
+.nc-resize { 
+  resize: both;
+}
+
+/* Min/Max dimensions for resizeable elements */
+.nc-resize-min-w-0 { min-width: 0; }
+.nc-resize-min-h-0 { min-height: 0; }
+.nc-resize-max-w-full { max-width: 100%; }
+.nc-resize-max-h-full { max-height: 100%; }

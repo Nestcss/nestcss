@@ -1,0 +1,42 @@
+/* =======================================================
+   NESTCSS - BOX SHADOW UTILITIES
+   ======================================================= */
+
+/* Box Shadow */
+.nc-shadow-xs { box-shadow: var(--nc-shadow-xs) !important; }
+.nc-shadow-sm { box-shadow: var(--nc-shadow-sm) !important; }
+.nc-shadow { box-shadow: var(--nc-shadow) !important; }
+.nc-shadow-md { box-shadow: var(--nc-shadow-md) !important; }
+.nc-shadow-lg { box-shadow: var(--nc-shadow-lg) !important; }
+.nc-shadow-xl { box-shadow: var(--nc-shadow-xl) !important; }
+.nc-shadow-2xl { box-shadow: var(--nc-shadow-2xl) !important; }
+.nc-shadow-none { box-shadow: none !important; }
+
+/* Shadow Color */
+.nc-shadow-slate-100 { --nc-shadow-color: var(--nc-slate-100) !important; }
+.nc-shadow-slate-200 { --nc-shadow-color: var(--nc-slate-200) !important; }
+.nc-shadow-slate-300 { --nc-shadow-color: var(--nc-slate-300) !important; }
+.nc-shadow-gray-100 { --nc-shadow-color: var(--nc-gray-100) !important; }
+.nc-shadow-gray-200 { --nc-shadow-color: var(--nc-gray-200) !important; }
+.nc-shadow-primary { --nc-shadow-color: var(--nc-primary-500) !important; }
+.nc-shadow-success { --nc-shadow-color: var(--nc-success-500) !important; }
+.nc-shadow-error { --nc-shadow-color: var(--nc-error-500) !important; }
+
+/* Inset Shadow */
+.nc-shadow-inner { box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05) !important; }
+
+/* Claymorphism Effects */
+/* .nc-clay {
+  background: var(--nc-bg-surface, #f5f5f5) !important;
+  box-shadow:
+    var(--nc-shadow-clay-inset-1),
+    var(--nc-shadow-clay-inset-2),
+    var(--nc-shadow-md) !important;
+  border-radius: var(--nc-radius-lg) !important;
+}
+ Glass Morphism
+.nc-glass {
+  background: var(--nc-glass-bg) !important;
+  backdrop-filter: blur(var(--nc-glass-blur)) !important;
+  border: 1px solid var(--nc-glass-border) !important;
+} */
